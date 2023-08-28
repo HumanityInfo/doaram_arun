@@ -1,0 +1,13 @@
+import React from "react";
+import Error404 from "../ngo/Error404";
+
+function CorpElement({ children }) {
+  if (CurrentUser_TYPE === User_Types.CORP) {
+    return <>{children} </>;
+  }
+  else{
+    return<><Error404 /></>
+  }
+}
+
+export default CorpElement;
