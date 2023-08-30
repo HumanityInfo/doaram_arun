@@ -614,7 +614,7 @@ function NGO_Profile(props) {
         </div>
       </section>
 
-      <aside className="control-sidebar control-sidebar-dark asidefixed">
+      <aside className="control-sidebar control-sidebar-dark asidefixed rightbarnca">
         <div className="container mt-5" style={{ height: "600px !important" }}>
           <div className="row">
             <div

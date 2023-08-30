@@ -23,9 +23,8 @@ import ScrollToTop from "./doaram_web/scrolltotop.jsx";
 //Datatable Modules
 // import "datatables.net-dt/js/dataTables.dataTables";
 // import "datatables.net-dt/css/jquery.dataTables.min.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/doaram_ngo/assets/theme/adminlte.min.css";
-// import "./assets/theme/adminlte.min.css";
 
 import Login from "./doaram_ngo/components/ngo/Login.jsx";
 import NGO_Layout from "./doaram_ngo/components/shared/NGO_Layout";

@@ -13,12 +13,13 @@ function Header(props) {
     current.getMonth() + 1
   } / ${current.getFullYear()}`;
   return (
+    
     <nav className="main-header navbar navbar navbar-expand navbar-white navbar-light  fixed-top fontfamily">
       <ul className="navbar-nav" style={{ marginBottom: "0px" }}>
-        <li className="nav-item">
+        <li className="nav-item px-3">
           <Link
             to="#"
-            className="nav-link"
+            className="nav-linkheadernca"
             data-widget="pushmenu"
             role="button"
           >
@@ -26,11 +27,11 @@ function Header(props) {
           </Link>
         </li>
       </ul>
-      <ul className="navbar-nav ml-auto">
-        <li className="nav-item">
+      <ul className="navbar-nav ml-auto align-items-center">
+        <li className="nav-item px-2">
           <Link
             to="#"
-            className="nav-link"
+            className="nav-linkheadernca"
             data-widget="navbar-search"
             role="button"
           >
@@ -63,10 +64,10 @@ function Header(props) {
         </li>
         {props.type === User_Types.NGO || props.type === User_Types.CORP ? (
           <>
-            <li className="nav-item">
+            <li className="nav-item px-2">
               <div className="btn-group">
                 <button
-                  className="btn btnnca btn-pink btn-sm dropdown-toggle"
+                  className="btnnca btn-pink btn-sm dropdown-toggle"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -96,7 +97,7 @@ function Header(props) {
               </div>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item px-2">
               <Link to="/NGO_Plan">
                 {" "}
                 <div className="btn-group">
@@ -114,7 +115,7 @@ function Header(props) {
         ) : null}
         {props.type === User_Types.ADMIN ? (
           <>
-            <li class="nav-item">
+            <li class="nav-item px-2">
               <div class="btn-group">
                 <button
                   class="btn btnnca btn-pink btn-sm dropdown-toggle"
@@ -149,8 +150,8 @@ function Header(props) {
             </li>
           </>
         ) : null}
-        <li className="nav-item dropdown">
-          <Link to="#" className="nav-link" data-toggle="dropdown">
+        <li className="nav-item dropdown px-2">
+          <Link to="#" className="nav-linkheadernca " data-toggle="dropdown">
             <i className="far fa-bell themeCol-pink"></i>
             <span className="btn__badge pulse-button ">4</span>
           </Link>
@@ -188,20 +189,20 @@ function Header(props) {
             </NavLink>
           </div>
         </li>
-        <li className="nav-item">
+        <li className="nav-item px-2">
           <Link
             to="#"
-            className="nav-link"
+            className="nav-linkheadernca"
             data-widget="fullscreen"
             role="button"
           >
             <i className="fas fa-expand-arrows-alt themeCol-pink"></i>
           </Link>
         </li>
-        <li className="nav-item">
+        <li className="nav-item px-2">
           <Link
             to="#"
-            className="nav-link"
+            className="nav-linkheadernca"
             data-widget="control-sidebar"
             data-controlsidebar-slide="true"
             role="button"
@@ -211,6 +212,7 @@ function Header(props) {
         </li>
       </ul>
     </nav>
+    
   );
 }
 

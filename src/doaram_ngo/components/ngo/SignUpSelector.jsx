@@ -7,6 +7,7 @@ const boyImageCom = {
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundPosition: "center",
+  height:"100vh"
 };
 
 function SignUpSelector() {
@@ -147,7 +148,7 @@ function SignUpSelector() {
                       <div className="input-group ">
                         <button
                           type="button"
-                          className="btn btnnca btn-default bg-light dropdown-toggle input-tgroup"
+                          className="btnnca btn-default bg-light dropdown-toggle input-tgroup"
                           data-bs-toggle="dropdown"
                         >
                           IN(+91)
@@ -269,7 +270,7 @@ function SignUpSelector() {
                   <button
                     type="button"
                     name="next"
-                    className="next btn btnnca btn-gold btn-sm w-25"
+                    className=" bg-goldweb btn-sm btnborder w-25"
                   >
                     Next <i className="fa fa-arrow-right"></i>
                   </button>

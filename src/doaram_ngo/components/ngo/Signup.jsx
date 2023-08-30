@@ -30,7 +30,7 @@ function Registration() {
                 <img
                   src={require("./../../assets/da_img/logo1.png")}
                   width={100}
-                  height={50}
+                  height={100}
                   alt="DoAram_Logo"
                   className="rounded mx-auto d-block"
                 />
@@ -40,7 +40,7 @@ function Registration() {
               </small>
               <br />
               <div className="row text-end">
-                <NavLink to="/" className="text-white font14">
+                <NavLink to="/signin" className="text-white font14">
                   Already User?
                   <span
                     className="text-warning text-sm toolTip top  "
@@ -70,6 +70,7 @@ function Registration() {
                   </select>
                   <label for="selLoginas">Login as</label>
                 </div>
+                <span className="d-input-group-text border-0"></span>
               </div>
             </div>
 
@@ -91,6 +92,7 @@ function Registration() {
                 />
                 <label for="txtlogemail">Email</label>
               </div>
+              <span className="d-input-group-text border-0"></span>
             </div>
 
             <div className="text-danger errors para"></div>
@@ -172,7 +174,7 @@ function Registration() {
               <div className="d-flex  justify-content-center">
                 <button
                   type="button"
-                  className="btn btnnca btn-gold col-md-5 signupbtn"
+                  className="bg-yellowgra loginbtn"
                 >
                   Create Account
                 </button>

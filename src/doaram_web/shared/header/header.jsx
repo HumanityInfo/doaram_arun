@@ -165,7 +165,10 @@ function Header() {
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="defaultDropdown">
                   <li>
-                    <a className="dropdown-item ngoPanel">NGO</a>
+                    <a className="dropdown-item ngoPanel">
+                      {" "}
+                      <Link to="/signin">NGO</Link>
+                    </a>
                   </li>
                   <li>
                     <a className="dropdown-item corpPanel">Corporate</a>

@@ -7,6 +7,7 @@ const boyImageCom = {
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundPosition: "center",
+  height: "100vh",
 };
 
 function Welcome() {
@@ -28,17 +29,15 @@ function Welcome() {
                 <img
                   src={require("./../../assets/da_img/logo1.png")}
                   width={100}
-                  height={50}
+                  height={100}
                   alt="DoAram_Logo"
                   className="rounded mx-auto d-block"
                 />
               </div>
-              <small className="text-white font20 text-sm ">
-                Let's Do Aram
-              </small>
+              <small className="text-white font20 text-sm">Let's Do Aram</small>
               <br />
 
-              <div className="input-group">
+              <div className="input-group mt-5">
                 <span className="d-input-group-text">
                   <i
                     className="fa fa-user-circle themeCol-pink"
@@ -53,13 +52,17 @@ function Welcome() {
                   </select>
                   <label for="loginas">Login as</label>
                 </div>
+                <span className="d-input-group-text border-0"></span>
               </div>
             </div>
 
             <div className="row"></div>
             <div className="input-group">
               <span className="d-input-group-text">
-                <i className="fa fa-envelope  themeCol-pink" aria-hidden="true"></i>
+                <i
+                  className="fa fa-envelope  themeCol-pink"
+                  aria-hidden="true"
+                ></i>
               </span>
               <div className="form-floating  border-0">
                 <input
@@ -71,6 +74,7 @@ function Welcome() {
                 />
                 <label for="logemail">Email</label>
               </div>
+              <span className="d-input-group-text border-0"></span>
             </div>
 
             <div className="text-danger errors para"></div>
@@ -115,9 +119,11 @@ function Welcome() {
             <div className="col-12">
               <p className="font16 text-danger b" id="logmessage"></p>
               <div className="d-flex  justify-content-center">
-                <button type="button" className="btn btnnca btn-gold col-md-5 logbtn">
-                  <NavLink to="/Dashboard">Log in</NavLink>
-                </button>
+                <NavLink to="/Dashboard">
+                  <button type="button" className="bg-yellowgra loginbtn">
+                    Log in
+                  </button>
+                </NavLink>
               </div>
             </div>
 
