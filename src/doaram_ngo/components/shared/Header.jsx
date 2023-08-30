@@ -118,7 +118,7 @@ function Header(props) {
             <li class="nav-item px-2">
               <div class="btn-group">
                 <button
-                  class="btn btnnca btn-pink btn-sm dropdown-toggle"
+                  class="btnnca btn-pink btn-sm dropdown-toggle"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
