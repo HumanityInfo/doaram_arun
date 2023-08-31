@@ -108,7 +108,7 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        {/* ...............................Public Routes.................. */}
+        {/* ....................Public Routes.................. */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/corporate" element={<Corporate />} />
@@ -129,7 +129,9 @@ function App() {
 
         <Route path="/signup" element={<Signup />} />
         <Route path="/corpsignup" element={<Corp_Signup />} />
+
         <Route path="/forgotPassword" element={<ForgotPassword />} />
+
         <Route path="/SignUpSelector" element={<SignUpSelector />} />
         <Route path="/corpSignUpSelector" element={<Corp_SignUpSelector />} />
 

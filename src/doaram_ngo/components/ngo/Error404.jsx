@@ -12,7 +12,7 @@ function Error404() {
               alt="DoAram_Logo"
               className="rounded mx-auto d-block mb-4"
             />
-            <Link to="/signin">
+            <Link to="/">
               {" "}
               <button className=" btnnca btn-gold btn-sm mb-3">Refresh</button>
             </Link>

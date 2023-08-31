@@ -13,7 +13,6 @@ function Header(props) {
     current.getMonth() + 1
   } / ${current.getFullYear()}`;
   return (
-    
     <nav className="main-header navbar navbar navbar-expand navbar-white navbar-light  fixed-top fontfamily">
       <ul className="navbar-nav" style={{ marginBottom: "0px" }}>
         <li className="nav-item px-3">
@@ -62,7 +61,7 @@ function Header(props) {
             </form>
           </div>
         </li>
-        {props.type === User_Types.NGO || props.type === User_Types.CORP ? (
+        {props.type === User_Types.NGO ? (
           <>
             <li className="nav-item px-2">
               <div className="btn-group">
@@ -88,7 +87,58 @@ function Header(props) {
                     <hr className="dropdown-divider" />
                   </li>
                   <li className="bg-gold">
-                    <NavLink className="dropdown-item" to="/">
+                    <NavLink className="dropdown-item" to="/ngosignin">
+                      <i className="fa fa-sign-out" aria-hidden="true"></i>
+                      Logout
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li className="nav-item px-2">
+              <Link to="/NGO_Plan">
+                {" "}
+                <div className="btn-group">
+                  <button
+                    className="btnnca btn-gold btn-sm buttonst d-flex  align-items-center mx-1"
+                    type="button"
+                  >
+                    <i className="fa fa-rocket me-1" aria-hidden="true"></i>{" "}
+                    Upgrade
+                  </button>
+                </div>
+              </Link>
+            </li>
+          </>
+        ) : null}
+        {props.type === User_Types.CORP? (
+          <>
+            <li className="nav-item px-2">
+              <div className="btn-group">
+                <button
+                  className="btnnca btn-pink btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i className="fa fa-user-circle" aria-hidden="true"></i>{" "}
+                  Profile
+                </button>
+                <ul className="dropdown-menu">
+                  <li>
+                    <a className="dropdown-item">Logged-In Date: {toDay}</a>
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item" to="/NGO_Profile">
+                      Account Setting
+                    </NavLink>
+                  </li>
+                  <li className="bg-gold">
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li className="bg-gold">
+                    <NavLink className="dropdown-item" to="/corpsignin">
                       <i className="fa fa-sign-out" aria-hidden="true"></i>
                       Logout
                     </NavLink>
@@ -140,7 +190,7 @@ function Header(props) {
                     <hr class="dropdown-divider" />
                   </li>
                   <li className="bg-gold">
-                    <Link to="/" class="dropdown-item">
+                    <Link to="/adminsignin" class="dropdown-item">
                       <i className="fa fa-sign-out" aria-hidden="true"></i>
                       Logout
                     </Link>
@@ -212,7 +262,6 @@ function Header(props) {
         </li>
       </ul>
     </nav>
-    
   );
 }
 

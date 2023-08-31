@@ -13,7 +13,7 @@ function SideMenu(props) {
   return (
     <aside
       className="main-sidebar sidebar-dark-primary elevation-4"
-      style={{ position: "fixed", lineHeight:"1.7rem" }}
+      style={{ position: "fixed", lineHeight: "1.7rem" }}
     >
       <a className="brand-link">
         <img
@@ -34,16 +34,51 @@ function SideMenu(props) {
             data-accordion="false"
           >
             <>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link nav-linknca"
-                  aria-current="page"
-                  to="/Dashboard"
-                >
-                  <i className="nav-icon fa fa-home"></i>
-                  <p> Dashboard</p>
-                </NavLink>
-              </li>
+              {props.type === User_Types.NGO ? (
+                <>
+                  {" "}
+                  <li className="nav-item">
+                    <NavLink
+                      className="nav-link nav-linknca"
+                      aria-current="page"
+                      to="/ngoDashboard"
+                    >
+                      <i className="nav-icon fa fa-home"></i>
+                      <p> Dashboard</p>
+                    </NavLink>
+                  </li>
+                </>
+              ) : null}{" "}
+              {props.type === User_Types.CORP? (
+                <>
+                  {" "}
+                  <li className="nav-item">
+                    <NavLink
+                      className="nav-link nav-linknca"
+                      aria-current="page"
+                      to="/corpDashboard"
+                    >
+                      <i className="nav-icon fa fa-home"></i>
+                      <p> Dashboard</p>
+                    </NavLink>
+                  </li>
+                </>
+              ) : null}{" "}
+              {props.type === User_Types.ADMIN ? (
+                <>
+                  {" "}
+                  <li className="nav-item">
+                    <NavLink
+                      className="nav-link nav-linknca"
+                      aria-current="page"
+                      to="/adminDashboard"
+                    >
+                      <i className="nav-icon fa fa-home"></i>
+                      <p> Dashboard</p>
+                    </NavLink>
+                  </li>
+                </>
+              ) : null}{" "}
             </>
 
             {props.type === User_Types.NGO ? (
