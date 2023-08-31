@@ -25,7 +25,7 @@ function Corp_CSR_Request(props) {
               <div className="col-sm-2">
                 <div className=" float-sm-right">
                   <NavLink to="/Corp_NGOs" className="nav-link">
-                    <button className="btn btnnca btn-warning btn-sm  " type="button">
+                    <button className="btnnca btn-warning btn-sm  " type="button">
                       <i className="fa fa-arrow-left"></i> Back To NGO
                     </button>
                   </NavLink>
@@ -71,7 +71,7 @@ function Corp_CSR_Request(props) {
                               </div>
                               <div className="col-md-2">
                                 <button
-                                  className="btn btnnca btn-white causelinks toolTip top "
+                                  className="btnnca btn-white causelinks toolTip top "
                                   data-tip="Click to check their web page"
                                 >
                                   <i className="externallinkIcon"></i>
@@ -132,7 +132,7 @@ function Corp_CSR_Request(props) {
                               </div>
                               <div className="col-md-2">
                                 <button
-                                  className="btn btnnca btn-white causelinks toolTip top "
+                                  className="btnnca btn-white causelinks toolTip top "
                                   data-tip="Click to check their web page"
                                 >
                                   <i className="externallinkIcon"></i>
@@ -315,7 +315,7 @@ function Corp_CSR_Request(props) {
                       <tr>
                         <th>Category</th>
                         <td>
-                          <button type="button" className="btn btnnca btn-info btn-sm">
+                          <button type="button" className="btnnca btn-info btn-sm">
                             Children
                           </button>
                         </td>
@@ -326,7 +326,7 @@ function Corp_CSR_Request(props) {
                         <td>
                           <button
                             type="button"
-                            className="btn btnnca btn-secondary btn-secondarynca btn-sm"
+                            className="btnnca btn-secondary btn-secondarynca btn-sm"
                           >
                             <i className="fa fa-pencil-square-o"></i>
                             &nbsp;Verified
@@ -362,7 +362,7 @@ function Corp_CSR_Request(props) {
                     </tbody>
                   </table>
 
-                  <button type="button" className="btn btnnca btn-gold btn-sm">
+                  <button type="button" className="btnnca btn-gold btn-sm">
                     View Request
                   </button>
                 </div>

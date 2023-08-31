@@ -35,7 +35,7 @@ function NGO_Banking() {
                   aria-current="page"
                   to="/CreateCause"
                 >
-                  <button type="button" className="btn btnnca btn-gold p-1">
+                  <button type="button" className="btnnca btn-gold p-1">
                     <span className="me-2" style={{ fontSize: "14px" }}>
                       <i
                         className="fa fa-pencil-square-o"
@@ -151,7 +151,7 @@ function NGO_Banking() {
             <div className="card cardnca mb-3 control-sidebar-dark">
               <div className="card-body">
                 <div className="input-group mb-3">
-                  <button className="btn btnnca btn-outline-secondary" type="button">
+                  <button className="btnnca btn-outline-secondary" type="button">
                     <i className="fa fa-user-circle"></i>
                   </button>
                   <select

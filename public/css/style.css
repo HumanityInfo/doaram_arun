@@ -1138,11 +1138,11 @@
 }
 
 /* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
+ *::-webkit-scrollbar {
   width: 16px;
 }
 
-*::-webkit-scrollbar-track {
+/**::-webkit-scrollbar-track {
   background: #ffffff;
 }
 
@@ -1150,7 +1150,7 @@
   background-color: #50011c;
   border-radius: 10px;
   border: 3px solid #ffffff;
-}
+} */
 /* end of scrollbar*/
 .range-slider {
   padding: 10px 50px 10px 15px;
@@ -1952,6 +1952,7 @@ h6,
 }
 .btnnca {
   font-family: "Montserrat" !important;
+  border: none;
 }
 .bg_dtheme {
   background: #2d1621;
@@ -4858,6 +4859,9 @@ input.form-control:focus {
   font-size: 20px !important;
   color: black;
 }
-.rightbarnca{
+.nav-linkheadernca:hover {
+  color: #000;
+}
+.rightbarnca {
   z-index: 100 !important;
 }

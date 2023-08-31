@@ -12,7 +12,7 @@ function CauseDetails(props) {
               <div className="col-sm-8 row">
                 <div className="col">
                   <NavLink to="/NGO_Cause">
-                    <button className="btn btnnca btn-info btn-sm">
+                    <button className="btnnca btn-info btn-sm">
                       <i className="fa fa-arrow-left"></i> Back To Cause
                     </button>
                   </NavLink>
@@ -92,7 +92,7 @@ function CauseDetails(props) {
                     <form className="  ms-5 mt-3 ">
                       <div className="mx-5 text-end">
                         <NavLink to="/NGO_Cause">
-                          <button className="btn btnnca btn-gold btn-sm">
+                          <button className="btnnca btn-gold btn-sm">
                             <i className="fa fa-pencil-square-o"></i> Edit cause
                           </button>
                         </NavLink>
@@ -188,7 +188,7 @@ function CauseDetails(props) {
                               readonly
                             />
                             <span className="input-group-btn">
-                              <div className="btn btnnca btn-default  custom-file-uploader">
+                              <div className="btnnca btn-default  custom-file-uploader">
                                 <input
                                   type="file"
                                   name="file"
@@ -196,7 +196,7 @@ function CauseDetails(props) {
                                 />
                                 <i className="fa fa-upload themeCol-pink"></i>
                               </div>
-                              <div className="btn btnnca btn-default">
+                              <div className="btnnca btn-default">
                                 <i className="fa fa-trash themeCol-pink"></i>
                               </div>
                             </span>
@@ -252,7 +252,7 @@ function CauseDetails(props) {
                         <div className="col-sm-2">
                           <div className="input-group">
                             <span className="input-group-btn">
-                              <div className="btn btnnca btn-default">
+                              <div className="btnnca btn-default">
                                 <i className="fa fa-inr"></i>
                               </div>
                             </span>
@@ -285,7 +285,7 @@ function CauseDetails(props) {
                               id="txtNGOStartDate"
                             />
                             <span className="input-group-btn">
-                              <div className="btn btnnca btn-default">
+                              <div className="btnnca btn-default">
                                 <i className="fa fa-calendar themeCol-pink"></i>
                               </div>
                             </span>
@@ -308,7 +308,7 @@ function CauseDetails(props) {
                               id="txtNGOEndDate"
                             />
                             <span className="input-group-btn">
-                              <div className="btn btnnca btn-default">
+                              <div className="btnnca btn-default">
                                 <i className="fa fa-calendar themeCol-pink"></i>
                               </div>
                             </span>
@@ -329,7 +329,7 @@ function CauseDetails(props) {
                           <a className="causelinks" target="_blank">
                             <div className=" ">
                               <input
-                                className="btn btnnca btn-gold btn-sm w-75 text-start"
+                                className="btnnca btn-gold btn-sm w-75 text-start"
                                 type="text"
                                 id="txtNgoShortURL"
                                 name="txtNgoShortURL"
@@ -440,11 +440,11 @@ function CauseDetails(props) {
                               placeholder="Add image 1"
                             />
                             <span className="input-group-btn">
-                              <div className="btn btnnca btn-default  custom-file-uploader">
+                              <div className="btnnca btn-default  custom-file-uploader">
                                 <input type="file" name="file" />
                                 <i className="fa fa-upload themeCol-pink"></i>
                               </div>
-                              <div className="btn btnnca btn-default">
+                              <div className="btnnca btn-default">
                                 <i className="fa fa-trash themeCol-pink"></i>
                               </div>
                             </span>
@@ -489,11 +489,11 @@ function CauseDetails(props) {
                               placeholder="Add image 1"
                             />
                             <span className="input-group-btn">
-                              <div className="btn btnnca btn-default  custom-file-uploader">
+                              <div className="btnnca btn-default  custom-file-uploader">
                                 <input type="file" name="file" />
                                 <i className="fa fa-upload themeCol-pink"></i>
                               </div>
-                              <div className="btn btnnca btn-default">
+                              <div className="btnnca btn-default">
                                 <i className="fa fa-trash themeCol-pink"></i>
                               </div>
                             </span>
@@ -538,11 +538,11 @@ function CauseDetails(props) {
                               placeholder="Add image 1"
                             />
                             <span className="input-group-btn">
-                              <div className="btn btnnca btn-default  custom-file-uploader">
+                              <div className="btnnca btn-default  custom-file-uploader">
                                 <input type="file" name="file" />
                                 <i className="fa fa-upload themeCol-pink"></i>
                               </div>
-                              <div className="btn btnnca btn-default">
+                              <div className="btnnca btn-default">
                                 <i className="fa fa-trash themeCol-pink"></i>
                               </div>
                             </span>
@@ -578,7 +578,7 @@ function CauseDetails(props) {
                           <div className="col-sm-4  ms-3">
                             <button
                               type="button"
-                              className="btn btnnca btn-outline-secondary btn-sm"
+                              className="btnnca btn-outline-secondary btn-sm"
                             >
                               {" "}
                               <i className="fa fa-plus-circle"></i>&nbsp;Add New
@@ -608,11 +608,11 @@ function CauseDetails(props) {
                               placeholder="Add image 1"
                             />
                             <span className="input-group-btn">
-                              <div className="btn btnnca btn-default  custom-file-uploader">
+                              <div className="btnnca btn-default  custom-file-uploader">
                                 <input type="file" name="file" />
                                 <i className="fa fa-upload themeCol-pink"></i>
                               </div>
-                              <div className="btn btnnca btn-default">
+                              <div className="btnnca btn-default">
                                 <i className="fa fa-trash themeCol-pink"></i>
                               </div>
                             </span>
@@ -638,7 +638,7 @@ function CauseDetails(props) {
                               placeholder="Write short image one description"
                             />
                             <span className="input-group-btn">
-                              <div className="btn btnnca btn-default">
+                              <div className="btnnca btn-default">
                                 <i className="fa fa-pencil-square-o  themeCol-pink"></i>
                               </div>
                             </span>
@@ -664,11 +664,11 @@ function CauseDetails(props) {
                               placeholder="Add image 1"
                             />
                             <span className="input-group-btn">
-                              <div className="btn btnnca btn-default  custom-file-uploader">
+                              <div className="btnnca btn-default  custom-file-uploader">
                                 <input type="file" name="file" />
                                 <i className="fa fa-upload themeCol-pink"></i>
                               </div>
-                              <div className="btn btnnca btn-default">
+                              <div className="btnnca btn-default">
                                 <i className="fa fa-trash themeCol-pink"></i>
                               </div>
                             </span>
@@ -694,7 +694,7 @@ function CauseDetails(props) {
                               placeholder="Write short image one description"
                             />
                             <span className="input-group-btn">
-                              <div className="btn btnnca btn-default">
+                              <div className="btnnca btn-default">
                                 <i className="fa fa-pencil-square-o  themeCol-pink"></i>
                               </div>
                             </span>
@@ -720,11 +720,11 @@ function CauseDetails(props) {
                               placeholder="Add image 1"
                             />
                             <span className="input-group-btn">
-                              <div className="btn btnnca btn-default  custom-file-uploader">
+                              <div className="btnnca btn-default  custom-file-uploader">
                                 <input type="file" name="file" />
                                 <i className="fa fa-upload themeCol-pink"></i>
                               </div>
-                              <div className="btn btnnca btn-default">
+                              <div className="btnnca btn-default">
                                 <i className="fa fa-trash themeCol-pink"></i>
                               </div>
                             </span>
@@ -749,7 +749,7 @@ function CauseDetails(props) {
                               placeholder="Write short image one description"
                             />
                             <span className="input-group-btn">
-                              <div className="btn btnnca btn-default">
+                              <div className="btnnca btn-default">
                                 <i className="fa fa-pencil-square-o  themeCol-pink"></i>
                               </div>
                             </span>
@@ -765,7 +765,7 @@ function CauseDetails(props) {
                           <div className="col-sm-4  ms-3">
                             <button
                               type="button"
-                              className="btn btnnca btn-outline-secondary btn-sm"
+                              className="btnnca btn-outline-secondary btn-sm"
                             >
                               {" "}
                               <i className="fa fa-plus-circle"></i>&nbsp;Add New
@@ -799,7 +799,7 @@ function CauseDetails(props) {
                             type="button"
                             name="SubmitDetail"
                             id="SubmitDetail"
-                            className="btn btnnca btn-gold btn-sm   "
+                            className="btnnca btn-gold btn-sm   "
                             // onClick={this.CauseSubmit}
                           >
                             <span
@@ -856,13 +856,13 @@ function CauseDetails(props) {
                                 Pending
                               </td>
                               <td>
-                                <span className="btn btnnca btn-danger btn-sm">
+                                <span className="btnnca btn-danger btn-sm">
                                   <i className="fas fa-trash-alt"></i>
                                 </span>
-                                <span className="btn btnnca btn-warning btn-sm">
+                                <span className="btnnca btn-warning btn-sm">
                                   <i className="fas fa-upload"></i>
                                 </span>
-                                <span className="btn btnnca btn-info btn-sm">
+                                <span className="btnnca btn-info btn-sm">
                                   <i className="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
@@ -882,13 +882,13 @@ function CauseDetails(props) {
                                 Pending
                               </td>
                               <td>
-                                <span className="btn btnnca btn-danger btn-sm">
+                                <span className="btnnca btn-danger btn-sm">
                                   <i className="fas fa-trash-alt"></i>
                                 </span>
-                                <span className="btn btnnca btn-warning btn-sm">
+                                <span className="btnnca btn-warning btn-sm">
                                   <i className="fas fa-upload"></i>
                                 </span>
-                                <span className="btn btnnca btn-info btn-sm">
+                                <span className="btnnca btn-info btn-sm">
                                   <i className="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
@@ -908,13 +908,13 @@ function CauseDetails(props) {
                                 Pending
                               </td>
                               <td>
-                                <span className="btn btnnca btn-danger btn-sm">
+                                <span className="btnnca btn-danger btn-sm">
                                   <i className="fas fa-trash-alt"></i>
                                 </span>
-                                <span className="btn btnnca btn-warning btn-sm">
+                                <span className="btnnca btn-warning btn-sm">
                                   <i className="fas fa-upload"></i>
                                 </span>
-                                <span className="btn btnnca btn-info btn-sm">
+                                <span className="btnnca btn-info btn-sm">
                                   <i className="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
@@ -934,13 +934,13 @@ function CauseDetails(props) {
                                 Pending
                               </td>
                               <td>
-                                <span className="btn btnnca btn-danger btn-sm">
+                                <span className="btnnca btn-danger btn-sm">
                                   <i className="fas fa-trash-alt"></i>
                                 </span>
-                                <span className="btn btnnca btn-warning btn-sm">
+                                <span className="btnnca btn-warning btn-sm">
                                   <i className="fas fa-upload"></i>
                                 </span>
-                                <span className="btn btnnca btn-info btn-sm">
+                                <span className="btnnca btn-info btn-sm">
                                   <i className="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
@@ -960,13 +960,13 @@ function CauseDetails(props) {
                                 Pending
                               </td>
                               <td>
-                                <span className="btn btnnca btn-danger btn-sm">
+                                <span className="btnnca btn-danger btn-sm">
                                   <i className="fas fa-trash-alt"></i>
                                 </span>
-                                <span className="btn btnnca btn-warning btn-sm">
+                                <span className="btnnca btn-warning btn-sm">
                                   <i className="fas fa-upload"></i>
                                 </span>
-                                <span className="btn btnnca btn-info btn-sm">
+                                <span className="btnnca btn-info btn-sm">
                                   <i className="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
@@ -1007,7 +1007,7 @@ function CauseDetails(props) {
                                 </span>{" "}
                               </div>
                               <button
-                                className="btn btnnca btn-white causelinks
+                                className="btnnca btn-white causelinks
  "
                               >
                                 <i className="externallinkIcon"></i>
@@ -1070,7 +1070,7 @@ function CauseDetails(props) {
                                 </span>{" "}
                               </div>
                               <button
-                                className="btn btnnca btn-white causelinks
+                                className="btnnca btn-white causelinks
  "
                               >
                                 <i className="externallinkIcon  "></i>
@@ -1160,7 +1160,7 @@ function CauseDetails(props) {
                       <tr>
                         <th>Cause Category</th>
                         <td>
-                          <button type="button" className="btn btnnca btn-info btn-sm">
+                          <button type="button" className="btnnca btn-info btn-sm">
                             Children
                           </button>
                         </td>
@@ -1171,7 +1171,7 @@ function CauseDetails(props) {
                         <td>
                           <button
                             type="button"
-                            className="btn btnnca btn-light btn-sm"
+                            className="btnnca btn-light btn-sm"
                           >
                             <i className="fa fa-pencil-square-o"></i>
                             &nbsp;Verified

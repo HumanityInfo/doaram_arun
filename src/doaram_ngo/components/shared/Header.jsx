@@ -47,11 +47,11 @@ function Header(props) {
                   aria-label="Search for items here..."
                 />
                 <div className="input-group-append">
-                  <button className="btn btnnca btn-navbar" type="submit">
+                  <button className="btnnca btn-navbar" type="submit">
                     <i className="fas fa-search themeCol-pink"></i>
                   </button>
                   <button
-                    className="btn btnnca btn-navbar"
+                    className="btnnca btn-navbar"
                     type="button"
                     data-widget="navbar-search"
                   >
@@ -102,7 +102,7 @@ function Header(props) {
                 {" "}
                 <div className="btn-group">
                   <button
-                    className="btn btnnca btn-gold btn-sm buttonst d-flex  align-items-center mx-1"
+                    className="btnnca btn-gold btn-sm buttonst d-flex  align-items-center mx-1"
                     type="button"
                   >
                     <i className="fa fa-rocket me-1" aria-hidden="true"></i>{" "}

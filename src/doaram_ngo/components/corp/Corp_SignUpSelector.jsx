@@ -11,7 +11,7 @@ const boyImageCom = {
   height: "100vh",
 };
 
-function SignUpSelector() {
+function Corp_SignUpSelector() {
   return (
     <div className="bg-light fontfamilynca">
       <div className="col-md-12 row ">
@@ -425,8 +425,8 @@ function SignUpSelector() {
                   &nbsp;&nbsp;
                 </fieldset>
               </form> */}
-              <h2> signup form for NGO will be uploaded soon</h2>
-              <Link to="/ngosignin">
+              <h2> signup form for Corp will be uploaded soon</h2>
+              <Link to="/corpsignin">
                 <button
                   type="button"
                   name="SubmitDetail"
@@ -477,4 +477,4 @@ function SignUpSelector() {
   );
 }
 
-export default SignUpSelector;
+export default Corp_SignUpSelector;

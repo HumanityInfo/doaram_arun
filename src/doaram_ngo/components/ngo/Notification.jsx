@@ -106,7 +106,7 @@ function Notification(props) {
                                       <NavLink to="/NGO_CSR_Request">
                                         <button
                                           type="button"
-                                          className="btn btnnca btn-primarynca btn-primary btn-sm"
+                                          className="btnnca btn-primarynca btn-primary btn-sm"
                                         >
                                           View{" "}
                                         </button>
@@ -182,7 +182,7 @@ function Notification(props) {
                                       <NavLink to="/NGO_CSR_Request">
                                         <button
                                           type="button"
-                                          className="btn btnnca btn-primarynca btn-primary btn-sm"
+                                          className="btnnca btn-primarynca btn-primary btn-sm"
                                         >
                                           View{" "}
                                         </button>
@@ -224,7 +224,7 @@ function Notification(props) {
                       <tr>
                         <th>Category</th>
                         <td>
-                          <button type="button" className="btn btnnca btn-info btn-sm">
+                          <button type="button" className="btnnca btn-info btn-sm">
                             Children
                           </button>
                         </td>
@@ -235,7 +235,7 @@ function Notification(props) {
                         <td>
                           <button
                             type="button"
-                            className="btn btnnca btn-secondary btn-secondarynca btn-sm"
+                            className="btnnca btn-secondary btn-secondarynca btn-sm"
                           >
                             <i className="fa fa-pencil-square-o"></i>
                             &nbsp;Verified
@@ -263,7 +263,7 @@ function Notification(props) {
                       <tr>
                         <th>Company Location</th>
                         <td>
-                          <button type="button" className="btn btnnca btn-info btn-sm">
+                          <button type="button" className="btnnca btn-info btn-sm">
                             Chennai
                           </button>
                         </td>
@@ -271,12 +271,12 @@ function Notification(props) {
                     </tbody>
                   </table>
 
-                  <button type="button" className="btn btnnca btn-gold btn-sm">
+                  <button type="button" className="btnnca btn-gold btn-sm">
                     View Request
                   </button>
                   <br></br>
                   <Link to="/NGO_CSR_Request">
-                    <button type="button" className="btn btnnca btn-gold btn-sm mt-4">
+                    <button type="button" className="btnnca btn-gold btn-sm mt-4">
                       CSR Document Details
                     </button>{" "}
                   </Link>

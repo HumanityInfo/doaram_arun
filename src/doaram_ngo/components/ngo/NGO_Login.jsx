@@ -10,7 +10,7 @@ const boyImageCom = {
   height: "100vh",
 };
 
-function Welcome() {
+function NGO_Login() {
   return (
     <div className="bg_dtheme fontfamilynca">
       <div className="row ">
@@ -47,8 +47,8 @@ function Welcome() {
                 <div className="form-floating  border-0">
                   <select className="form-control w-100  border-0">
                     <option value="NGO">NGO</option>
-                    <option value="Corporate">CORPORATE</option>
-                    <option value="Individual">INDIVIDUAL</option>
+                    {/* <option value="Corporate">CORPORATE</option>
+                    <option value="Individual">INDIVIDUAL</option> */}
                   </select>
                   <label for="loginas">Login as</label>
                 </div>
@@ -119,7 +119,7 @@ function Welcome() {
             <div className="col-12">
               <p className="font16 text-danger b" id="logmessage"></p>
               <div className="d-flex  justify-content-center">
-                <NavLink to="/Dashboard">
+                <NavLink to="/ngoDashboard">
                   <button type="button" className="bg-yellowgra loginbtn">
                     Log in
                   </button>
@@ -142,4 +142,4 @@ function Welcome() {
   );
 }
 
-export default Welcome;
+export default NGO_Login;

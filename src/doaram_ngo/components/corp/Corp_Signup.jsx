@@ -10,7 +10,7 @@ const boyImageCom = {
   backgroundPosition: "center",
 };
 
-function Registration() {
+function Corp_Signup() {
   return (
     <div className="bg_dtheme fontfamilynca">
       <div className="row ">
@@ -40,7 +40,7 @@ function Registration() {
               </small>
               <br />
               <div className="row text-end">
-                <NavLink to="/ngosignin" className="text-white font14">
+                <NavLink to="/corpsignin" className="text-white font14">
                   Already User?
                   <span
                     className="text-warning text-sm toolTip top  "
@@ -64,7 +64,7 @@ function Registration() {
                     id="selLoginas"
                     className="form-control w-100  border-0"
                   >
-                    <option value="NGO">NGO</option>
+                    <option value="">CORPORATE</option>
                     {/* <option value="Corporate">CORPORATE</option>
                     <option value="Individual">INDIVIDUAL</option> */}
                   </select>
@@ -172,7 +172,7 @@ function Registration() {
             <div className="col-12">
               <p className="font16 text-danger b" id="signupmessage"></p>
               <div className="d-flex  justify-content-center">
-                <Link to="/SignUpSelector">
+                <Link to="/CorpSignUpSelector">
                   <button type="button" className="bg-yellowgra loginbtn">
                     Create Account
                   </button>
@@ -186,4 +186,4 @@ function Registration() {
   );
 }
 
-export default Registration;
+export default Corp_Signup;

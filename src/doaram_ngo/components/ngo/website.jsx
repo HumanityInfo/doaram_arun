@@ -7,7 +7,7 @@ function Website() {
       <div className="row mb-2">
         <div className="col pt-5">
           <NavLink to="/CauseDetails">
-            <button className="btn btnnca btn-default btn-sm">
+            <button className="btnnca btn-default btn-sm">
               <i className="fa fa-arrow-left"></i> Back To Cause
             </button>
           </NavLink>
@@ -94,13 +94,13 @@ function Website() {
                     {" "}
                     Share : &nbsp; &nbsp; &nbsp;
                     <div className="d-flex pt-2 ms-5">
-                      <a className="btn btnnca btn-squarenca btn-iconnca rounded-circle me-2">
+                      <a className="btnnca btn-squarenca btn-iconnca rounded-circle me-2">
                         <i className="fab fa-twitter"></i>
                       </a>
-                      <a className="btn btnnca btn-squarenca btn-iconnca rounded-circle me-2">
+                      <a className="btnnca btn-squarenca btn-iconnca rounded-circle me-2">
                         <i className="fab fa-facebook-f"></i>
                       </a>
-                      <a className="btn btnnca btn-squarenca btn-iconnca rounded-circle me-2">
+                      <a className="btnnca btn-squarenca btn-iconnca rounded-circle me-2">
                         <i className="fab fa-instagram"></i>
                       </a>
                     </div>
@@ -123,7 +123,7 @@ function Website() {
                     </div>
                   </div>
                   <div className="row d-flex justify-content-end">
-                    <button className="btn btnnca btn-secondary btn-secondarynca btn-sm mx-2  col-md-3">
+                    <button className="btnnca btn-secondary btn-secondarynca btn-sm mx-2  col-md-3">
                       Leave comment
                     </button>
                   </div>

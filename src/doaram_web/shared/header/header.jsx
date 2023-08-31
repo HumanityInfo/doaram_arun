@@ -167,17 +167,21 @@ function Header() {
                   <li>
                     <a className="dropdown-item ngoPanel">
                       {" "}
-                      <Link to="/signin">NGO</Link>
+                      <Link to="/ngosignin">NGO</Link>
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item corpPanel">Corporate</a>
+                    <a className="dropdown-item corpPanel">
+                      <Link to="/corpsignin">Corporate</Link>
+                    </a>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item adminPanel">Admin</a>
+                    <a className="dropdown-item adminPanel">
+                      <Link to="adminsignin">Admin</Link>
+                    </a>
                   </li>
                 </ul>
               </div>

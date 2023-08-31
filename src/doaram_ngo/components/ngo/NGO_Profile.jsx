@@ -14,7 +14,7 @@ function NGO_Profile(props) {
             </div>
             <div className="col-sm-6">
               <div className="nav-link d-flex justify-content-end">
-                <button className="btn btnnca btn-gold btn-sm ">
+                <button className="btnnca btn-gold btn-sm ">
                   <i className="fa fa-pencil-square-o"></i> Save NGO Profile
                 </button>
               </div>
@@ -393,7 +393,7 @@ function NGO_Profile(props) {
                         <div className="input-group input-group-sm ">
                           <button
                             type="button"
-                            className="btn btnnca btn-default bg-light dropdown-toggle input-tgroup"
+                            className="btnnca btn-default bg-light dropdown-toggle input-tgroup"
                             data-bs-toggle="dropdown"
                           >
                             IN(+91)
@@ -566,7 +566,7 @@ function NGO_Profile(props) {
                         <div className="input-group mb-3">
                           <div className="input-group-prepend">
                             <span
-                              className="btn btnnca btn-gold btn-sm"
+                              className="btnnca btn-gold btn-sm"
                               id="basic-addon3"
                             >
                               doaram/

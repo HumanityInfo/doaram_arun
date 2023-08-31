@@ -11,8 +11,8 @@ function NGO_Plan(props) {
             <div className="row mb-2">
               <div className="col-sm-8 row">
                 <div className="col">
-                  <NavLink to="/NGO_Dashboard">
-                    <button className="btn btnnca btn-default">
+                  <NavLink to="/dashboard">
+                    <button className="btnnca btn-default">
                       <i className="fa fa-arrow-left"></i> Back To Home
                     </button>
                   </NavLink>
@@ -24,7 +24,7 @@ function NGO_Plan(props) {
                     <Link to="#">NGO</Link>
                   </li>
                   <li className="breadcrumb-item active">
-                    <NavLink to="/NGO_Dashboard">NGO Dashboard</NavLink>
+                    <NavLink to="/dashboard">NGO Dashboard</NavLink>
                   </li>
                   <li className="breadcrumb-item active">Upgrade plan</li>
                 </ol>
@@ -106,7 +106,7 @@ function NGO_Plan(props) {
                     </li>
                   </ul>
                   <div className="">
-                    <Link to="#" className="btn btnnca btn-gold btn-sm">
+                    <Link to="#" className="btnnca btn-gold btn-sm">
                       Proceed to payment
                     </Link>
                   </div>
@@ -138,7 +138,7 @@ function NGO_Plan(props) {
                     <li className="category">Get DoAram certification</li>
                   </ul>
                   <div className="">
-                    <Link to="#" className="btn btnnca btn-gold btn-sm">
+                    <Link to="#" className="btnnca btn-gold btn-sm">
                       Proceed to payment
                     </Link>
                   </div>

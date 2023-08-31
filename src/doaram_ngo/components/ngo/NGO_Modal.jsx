@@ -24,7 +24,7 @@ function NGO_Modal() {
               ></div>
 
               <div className="modal-footer d-flex justify-content-center text-center">
-                <button type="button" className="btn btnnca btn-success btn-sm">
+                <button type="button" className="btnnca btn-success btn-sm">
                   Ok
                 </button>
               </div>
@@ -71,7 +71,7 @@ function NGO_Modal() {
                 ></textarea>
               </div>
               <div className="d-flex justify-content-end text-center mt-2">
-                <button type="button" className="btn btnnca btn-gold btn-sm px-3 py-1">
+                <button type="button" className="btnnca btn-gold btn-sm px-3 py-1">
                   YES!
                 </button>
               </div>
@@ -117,7 +117,7 @@ function NGO_Modal() {
                   </label>
                   <div className="col-sm-10">
                     <span className="input-group-btn">
-                      <div className="btn btnnca btn-default">
+                      <div className="btnnca btn-default">
                         <input
                           type="text"
                           className="form-control"
@@ -126,7 +126,7 @@ function NGO_Modal() {
                         />
                         <i className="fa fa-upload themeCol-pink"></i>
                       </div>
-                      <div className="btn btnnca btn-default">
+                      <div className="btnnca btn-default">
                         <i className="fa fa-trash themeCol-pink"></i>
                       </div>
                     </span>
@@ -135,7 +135,7 @@ function NGO_Modal() {
               </div>
             </div>
             <div className="modal-footer d-flex justify-content-center text-center">
-              <button type="button" className="btn btnnca btn-green btn-sm">
+              <button type="button" className="btnnca btn-green btn-sm">
                 Submit
               </button>
             </div>

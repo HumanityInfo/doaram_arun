@@ -26,10 +26,14 @@ import ScrollToTop from "./doaram_web/scrolltotop.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/doaram_ngo/assets/theme/adminlte.min.css";
 
-import Login from "./doaram_ngo/components/ngo/Login.jsx";
+import NGO_Login from "./doaram_ngo/components/ngo/NGO_Login";
+import Corp_Login from "./doaram_ngo/components/corp/Corp_Login";
+import Admin_Login from "./doaram_ngo/components/admin/Admin_Login";
 import NGO_Layout from "./doaram_ngo/components/shared/NGO_Layout";
 import Signup from "./doaram_ngo/components/ngo/Signup";
+import Corp_Signup from "./doaram_ngo/components/corp/Corp_Signup";
 import SignUpSelector from "./doaram_ngo/components/ngo/SignUpSelector";
+import Corp_SignUpSelector from "./doaram_ngo/components/corp/Corp_SignUpSelector";
 import NGO_Cause from "./doaram_ngo/components/ngo/NGO_Cause";
 import CauseDetails from "./doaram_ngo/components/ngo/CauseDetails";
 import NGO_Profile from "./doaram_ngo/components/ngo/NGO_Profile";
@@ -46,7 +50,10 @@ import Admin_Profile from "./doaram_ngo/components/admin/Admin_Profile";
 import Admin_NGO from "./doaram_ngo/components/admin/Admin_NGO";
 import Corp_NGO from "./doaram_ngo/components/corp/Corp_NGO";
 import Corp_Profile from "./doaram_ngo/components/corp/Corp_Profile";
-import Dashboard from "./doaram_ngo/components/shared/Dashboard";
+// import Dashboard from "./doaram_ngo/components/shared/Dashboard";
+import NGO_Dashboard from "./doaram_ngo/components/ngo/NGO_Dashboard";
+import Corp_Dashboard from "./doaram_ngo/components/corp/Corp_Dashboard";
+import Admin_Dashboard from "./doaram_ngo/components/admin/Admin_Dashboard";
 
 function App() {
   // Initialize Google Analytics
@@ -58,9 +65,9 @@ function App() {
     CORP: "Corp User",
     ADMIN: "Admin User",
   };
-  const CurrentUser_TYPE = User_Types.ADMIN;
+  // const CurrentUser_TYPE = User_Types.ADMIN;
   // const CurrentUser_TYPE = User_Types.NGO;
-  // const CurrentUser_TYPE = User_Types.CORP;
+  const CurrentUser_TYPE = User_Types.CORP;
 
   function NGOElement({ children }) {
     if (CurrentUser_TYPE === User_Types.NGO) {
@@ -116,17 +123,48 @@ function App() {
         <Route path="/policy" element={<Policy />} />
         <Route path="/terms" element={<Terms />} />
         {/* ----------------------NGO---------------------------- */}
-        <Route path="/signin" element={<Login />} />
+        <Route path="/ngosignin" element={<NGO_Login />} />
+        <Route path="/corpsignin" element={<Corp_Login />} />
+        <Route path="/adminsignin" element={<Admin_Login />} />
+
         <Route path="/signup" element={<Signup />} />
+        <Route path="/corpsignup" element={<Corp_Signup />} />
         <Route path="/forgotPassword" element={<ForgotPassword />} />
         <Route path="/SignUpSelector" element={<SignUpSelector />} />
+        <Route path="/corpSignUpSelector" element={<Corp_SignUpSelector />} />
+
         {/* ...............................Protected Routes.................. */}
         {/* <Route path="/dashboard" element={<NGO_Layout />} /> */}
 
         <Route
+          path="/ngoDashboard"
+          element={
+            <NGOElement>
+              <NGO_Dashboard type={CurrentUser_TYPE} />
+            </NGOElement>
+          }
+        />
+        <Route
+          path="/corpDashboard"
+          element={
+            <CorpElement>
+              <Corp_Dashboard type={CurrentUser_TYPE} />
+            </CorpElement>
+          }
+        />
+        <Route
+          path="/adminDashboard"
+          element={
+            <AdminElement>
+              <Admin_Dashboard type={CurrentUser_TYPE} />
+            </AdminElement>
+          }
+        />
+        {/* <Route
           path="/Dashboard"
           element={<Dashboard type={CurrentUser_TYPE} />}
-        />
+        /> */}
+
         <Route
           path="/NGO_Cause"
           element={

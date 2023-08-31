@@ -10,7 +10,7 @@ function ForgotPassword() {
           <div className="row col-md-6 mt-2 ">
             <div className="card cardnca pt-2">
               <NavLink to="/" className="nav-link text-end mb-3">
-                <button className="btn btnnca btn-info btn-sm  " type="button">
+                <button className="btnnca btn-info btn-sm  " type="button">
                   <i className="fa fa-arrow-left"></i> Back To Login
                 </button>
               </NavLink>
@@ -62,7 +62,7 @@ function ForgotPassword() {
                   <button
                     type="button"
                     name="next"
-                    className="next btn btnnca btn-gold btn-sm "
+                    className="next btnnca btn-gold btn-sm "
                   >
                     Next <i className="fa fa-arrow-right"></i>
                   </button>
@@ -120,7 +120,7 @@ function ForgotPassword() {
                   <button
                     type="button"
                     name="previous"
-                    className="previous btn btnnca btn-outline-secondary btn-sm "
+                    className="previous btnnca btn-outline-secondary btn-sm "
                     value="Previous"
                   >
                     {" "}
@@ -131,7 +131,7 @@ function ForgotPassword() {
                   <button
                     type="button"
                     name="next"
-                    className="next btn btnnca btn-gold btn-sm "
+                    className="next btnnca btn-gold btn-sm "
                   >
                     Next <i className="fa fa-arrow-right"></i>
                   </button>
@@ -203,7 +203,7 @@ function ForgotPassword() {
                   <button
                     type="button"
                     name="previous"
-                    className="previous btn btnnca btn-outline-secondary btn-sm "
+                    className="previous btnnca btn-outline-secondary btn-sm "
                     value="Previous"
                   >
                     {" "}
@@ -215,7 +215,7 @@ function ForgotPassword() {
                     type="button"
                     name="SubmitDetail"
                     id="SubmitDetail"
-                    className="next btn btnnca btn-gold btn-sm "
+                    className="next btnnca btn-gold btn-sm "
                   >
                     Submit <i className="fa fa-arrow-right"></i>
                   </button>
@@ -233,7 +233,7 @@ function ForgotPassword() {
                     </div>
                     <div className="row">
                       <div className="text-center b">
-                        <NavLink to="/" className="btn btnnca btn-gold btn-sm">
+                        <NavLink to="/signin" className="btnnca btn-gold btn-sm">
                           Login Now
                         </NavLink>
                       </div>
