@@ -650,6 +650,7 @@
   }
 } */
 
+
 /*** Header ***/
 .carousel-caption {
   top: 0;
@@ -2020,9 +2021,9 @@ h6,
   color: #d49732;
 }
 
-.form-check-input {
+/* .form-check-input {
   border: 1px solid rgb(255 255 255) !important;
-}
+} */
 
 .otpnumber input {
   width: 40px;
@@ -4127,7 +4128,7 @@ form {
   text-transform: uppercase;
 }
 
-.badge::before,
+/* .badge::before,
 .badge::after {
   content: "";
   position: absolute;
@@ -4137,7 +4138,7 @@ form {
   height: 100%;
   background: inherit;
   min-width: 55px;
-}
+} */
 
 .badge::before {
   right: 100%;
@@ -4864,4 +4865,7 @@ input.form-control:focus {
 }
 .rightbarnca {
   z-index: 100 !important;
+}
+.txtwhite{
+  color: #fff !important;
 }
