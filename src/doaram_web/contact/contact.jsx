@@ -27,8 +27,7 @@ function Contact() {
                 <p className="mb-2">+91 95858 24555</p>
                 <br />
                 <Link to="tel:+0123456789" className="btn btn-secondary  px-4">
-                  <span className="txtwhite">Call Us</span>{" "}
-                  <i className="fa fa-arrow-right txtwhite ms-2"></i>
+                  Call Us <i className="fa fa-arrow-right ms-2"></i>
                 </Link>
               </div>
             </div>
@@ -50,8 +49,7 @@ function Contact() {
                   to="mailto:info@example.com"
                   className="btn btn-secondary  px-4"
                 >
-                  <span className="txtwhite"> Email Us </span>
-                  <i className="fa fa-arrow-right  txtwhite ms-2"></i>
+                  Email Us <i className="fa fa-arrow-right ms-2"></i>
                 </Link>
               </div>
             </div>
@@ -75,8 +73,7 @@ function Contact() {
                   className="btn btn-secondary  px-4"
                   target="blank"
                 >
-                  <span className="txtwhite">Visit Us</span>{" "}
-                  <i className="fa fa-arrow-right txtwhite ms-2"></i>
+                  Visit Us <i className="fa fa-arrow-right ms-2"></i>
                 </Link>
               </div>
             </div>
@@ -102,7 +99,7 @@ function Contact() {
           </div>
           <div className="row g-5">
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-              <p className="fw-medium text-uppercase text-dark mb-2">
+              <p className="fw-web text-uppercase text-dark mb-2">
                 Contact Us
               </p>
               <h1 className="display-5 mb-4">

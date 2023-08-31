@@ -16,7 +16,7 @@ function Header() {
           <div className="row g-0 d-none d-lg-flex">
             <div className="col-lg-6 ps-5 text-start">
               <div className="h-100 d-inline-flex align-items-center text-white">
-                <span>Follow Us:&nbsp;</span>
+                <span className="font15">Follow Us:&nbsp;</span>
                 <Link
                   to="https://twitter.com/DoAramDoGood/"
                   className="btn btn-square btn-icon rounded-circle me-2"
@@ -165,54 +165,27 @@ function Header() {
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="defaultDropdown">
                   <li>
-                    <Link to="/ngosignin">
-                      <a className="dropdown-item ngoPanel"> NGO</a>
-                    </Link>
+                    <a className="dropdown-item ngoPanel">
+                      {" "}
+                      <Link to="/signin">NGO</Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/corpsignin">
-                      <a className="dropdown-item corpPanel">Corporate</a>
-                    </Link>
+                    <a className="dropdown-item corpPanel">Corporate</a>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <Link to="adminsignin">
-                      <a className="dropdown-item adminPanel">Admin</a>
-                    </Link>
+                    <a className="dropdown-item adminPanel">Admin</a>
                   </li>
                 </ul>
               </div>
-              {/* <a className="ngoPanel ms-1">
+              <a className="ngoPanel ms-1">
                 <button type="button" className="btn btn-warning">
                   Sign-up
                 </button>
-              </a> */}
-              <div className="btn-group ">
-                <button
-                  className="btn dropdown-toggle btn-warning ms-2"
-                  type="button"
-                  id="defaultDropdown"
-                  data-bs-toggle="dropdown"
-                  data-bs-auto-close="true"
-                  aria-expanded="false"
-                >
-                  Sign-up
-                </button>
-                <ul className="dropdown-menu" aria-labelledby="defaultDropdown">
-                  <li>
-                    <Link to="/signup">
-                      <a className="dropdown-item ngoPanel"> NGO</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/corpsignup">
-                      <a className="dropdown-item corpPanel">Corporate</a>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+              </a>
             </div>
           </div>
         </nav>

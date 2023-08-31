@@ -8,6 +8,7 @@ import Partner from "../shared/partner/partner";
 function About() {
   return (
     <>
+    <div style={{backgroundColor:'#eeeeee'}}>
       {/* <!-- Header --> */}
       <Header />
 
@@ -16,7 +17,7 @@ function About() {
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              <h1 className="fw-medium txt-warning mb-2">About DoAram</h1>
+              <h1 className="fw-web txt-warning mb-2">About DoAram</h1>
               <p className="mb-4">
                 {" "}
                 DoAram is an end-to-end digital platform bridging a trifecta of
@@ -29,13 +30,13 @@ function About() {
                 and fundraising, all in one place to realize maximum impact of
                 social good.
               </p>
-              <h5 className="fw-medium txt-warning mt-5 mb-2">Our Vision</h5>
+              <h5 className="fw-web txt-warning mt-5 mb-2">Our Vision</h5>
               <p>
                 To provide a seamless and transparent charity contribution
                 platform to facilitate donations, skill, resources, and planning
                 with ease for the greater good of society.
               </p>
-              <h5 className="fw-medium txt-warning mt-5 mb-2">Our Mission</h5>
+              <h5 className="fw-web txt-warning mt-5 mb-2">Our Mission</h5>
               <p>
                 To harness the largest group of likeminded people comprising of
                 Corporations, Individuals and a galore of social bodies with
@@ -65,7 +66,7 @@ function About() {
       <div className="container-fluid py-5 bgc-secondary">
         <div className="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
           <h1 className="display-5 text-white">DoAram in a Nutshell</h1>
-          <p className="fw-medium text-uppercase txt-warning mb-2">
+          <p className="fw-web text-uppercase txt-warning mb-2">
             {" "}
             The Whats, Whys & Hows
           </p>
@@ -74,7 +75,7 @@ function About() {
           <div className="row col-md-12  wow fadeInUp" data-wow-delay="0.1s">
             <div className="main-timeline  p-5 row">
               <div className="col-md-4">
-                <div className="timeline">
+                
                   <a className="timeline-content">
                     <div className="timeline-icon">
                       <i className="fa fa-building"></i>
@@ -96,10 +97,10 @@ function About() {
                       <p className="description"></p>
                     </div>
                   </a>
-                </div>
+                
               </div>
               <div className="col-md-4">
-                <div className="timeline blue">
+                
                   <a className="timeline-content">
                     <div className="timeline-icon">
                       <i className="fa fa-globe"></i>
@@ -123,10 +124,10 @@ function About() {
                       <br />
                     </div>
                   </a>
-                </div>
+                
               </div>
               <div className="col-md-4">
-                <div className="timeline green">
+                
                   <a className="timeline-content">
                     <div className="timeline-icon">
                       <i className="fa fa-user"></i>
@@ -151,7 +152,7 @@ function About() {
                       <br />
                     </div>
                   </a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -334,6 +335,7 @@ function About() {
 
       {/* <!-- Footer --> */}
       <Footer />
+      </div>
     </>
   );
 }

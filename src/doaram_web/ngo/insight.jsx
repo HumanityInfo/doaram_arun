@@ -16,7 +16,7 @@ function Insight() {
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              <h1 className="fw-medium text-dark mt-4 mb-2">
+              <h1 className="fw-web text-dark mt-4 mb-2">
                 DoAram Powers your NGO to its True Potential with the Power of
                 Insight!
               </h1>

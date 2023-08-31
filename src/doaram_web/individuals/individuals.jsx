@@ -15,7 +15,7 @@ function Individuals() {
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              <h1 className="fw-medium text-dark mt-5 mb-2">
+              <h1 className="fw-web text-dark mt-5 mb-2">
                 Donate / Volunteer For Good
               </h1>
               <p>

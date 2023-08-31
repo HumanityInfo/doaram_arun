@@ -27,7 +27,7 @@ function Partner() {
         <div className="container">
           <div className="row mt-5">
             <div className="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-              <h1 className="fw-medium mt-5 mb-2">Why Partner with DoAram</h1>
+              <h1 className="fw-web mt-5 mb-2">Why Partner with DoAram</h1>
               <p className="mt-4 mb-4">
                 Partnering with DoAram enhances NGO credibility and visibility
                 to approach individuals and corporates. The transfer of CSR

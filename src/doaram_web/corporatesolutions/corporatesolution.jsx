@@ -9,13 +9,14 @@ import Joinus from "../shared/joinus/joinus";
 function Corporate() {
   return (
     <>
+    <div style={{backgroundColor:'#eeeeee'}}>
       <Header />
       {/* <!-- solution Start --> */}
       <div className="container-xxl py-3 webbody">
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              <h1 className="fw-medium text-dark mb-2">
+              <h1 className="fw-web text-dark mb-2">
                 Corporate solutions in one platform
               </h1>
               <p>
@@ -155,8 +156,7 @@ function Corporate() {
         <div className="col-md-12">
           <div className=" row">
             <div className="col-md-4 mb-5">
-              <Link to="#" className="card cardStyle">
-                <div className="overlay"></div>
+              <Link to="/" className="card cardStyle">
                 <div className="circles text-start">
                   <img src="imges/icons/icons8-sign-in-64.png" alt="" />
                 </div>
@@ -169,8 +169,7 @@ function Corporate() {
               </Link>
             </div>
             <div className="col-md-4 mb-5">
-              <Link to="" className="card cardStyle">
-                <div className="overlay"></div>
+              <Link to="/" className="card cardStyle">
                 <div className="circles text-start">
                   <img src="imges/icons/icons8-donate-96 (1).png" />
                 </div>
@@ -184,8 +183,7 @@ function Corporate() {
               </Link>
             </div>
             <div className="col-md-4 mb-5">
-              <Link to="" className="card cardStyle">
-                <div className="overlay"></div>
+              <Link to="/" className="card cardStyle">
                 <div className="circles text-start">
                   <img src="imges/icons/icons8-file-64.png" alt="" />
                 </div>
@@ -200,8 +198,7 @@ function Corporate() {
               </Link>
             </div>
             <div className="col-md-4 mb-5">
-              <Link to="" className="card cardStyle">
-                <div className="overlay"></div>
+              <Link to="/" className="card cardStyle">
                 <div className="circles text-start">
                   <img src="imges/icons/icons8-initiate-money-transfer-100.png"  alt=""/>
                 </div>
@@ -216,8 +213,7 @@ function Corporate() {
               </Link>
             </div>
             <div className="col-md-4 mb-5">
-              <Link to="" className="card cardStyle">
-                <div className="overlay"></div>
+              <Link to="/" className="card cardStyle">
                 <div className="circles text-start">
                   <img src="imges/icons/icons8-survey-64.png" alt="" />
                 </div>
@@ -232,8 +228,8 @@ function Corporate() {
               </Link>
             </div>
             <div className="col-md-4 mb-5">
-              <Link to="" className="card cardStyle">
-                <div className="overlay"></div>
+              <Link to="/" className="card cardStyle">
+               
                 <div className="circles text-start">
                   <img src="imges/icons/icons8-envelope-96.png"  alt=""/>
                 </div>
@@ -258,6 +254,7 @@ function Corporate() {
       <Joinus />
       {/* footer */}
       <Footer />
+      </div>
     </>
   );
 }

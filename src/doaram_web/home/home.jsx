@@ -42,7 +42,7 @@ function Home() {
   }
   };
   return (
-    <div>
+    <div style={{backgroundColor:'#eeeeee'}}>
       <Header />
       {/* HomePage Start */}
       <div className="container-xxl py-1 webbody">
@@ -61,7 +61,7 @@ function Home() {
               an act of kindness and expression of human love without any
               personal motive.)
             </p>
-            <p className="fw-medium  mb-3">
+            <p className="fw-web  mb-3">
               Join the World’s Largest Contribution Platform to make the World a
               Better Place
             </p>
@@ -304,7 +304,7 @@ function Home() {
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              <h1 className="fw-medium txt-warning mb-2 abouttxt">
+              <h1 className="fw-web txt-warning mb-2 abouttxt">
                 About DoAram
                 <br />
                 <small className="h6 txt-warning">DoAram, Feel Good</small>
@@ -486,12 +486,12 @@ function Home() {
                 <div className="text-left ">
                   <h1 className="h3 text-white mb-2">Why DoAram</h1>
 
-                  <p className="fw-medium text-dark mb-2">
+                  <p className="fw-web text-dark mb-2">
                     We are geared with a comprehensive, end to end software
                     solutions that provides authentic, transparent and seamless
                     transactions between corporates, individuals and NGOs.{" "}
                   </p>
-                  <p className="fw-medium text-dark mb-2">
+                  <p className="fw-web text-dark mb-2">
                     Harness Efforts - Channel Funds - Measure Impact - Respond
                     Quickly
                   </p>

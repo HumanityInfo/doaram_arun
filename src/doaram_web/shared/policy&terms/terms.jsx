@@ -10,8 +10,8 @@ function Terms() {
         <div className="p-5" style={{background:" #fff",borderradius:"5px"}}>
           <div className="row ">
             <div className=" wow fadeIn" data-wow-delay="0.5s">
-              <h3 className="fw-medium txt-warning mb-2">Terms and Conditions</h3>
-              <p className="fw-medium text-dark mb-2">
+              <h3 className="fw-web txt-warning mb-2">Terms and Conditions</h3>
+              <p className="fw-web text-dark mb-2">
                 Use of this site is provided by DoAram Foundation (henceforth
                 referred to as DoAram)is subjected to the following Terms and
                 Conditions/ Terms of Use as given below.
@@ -96,8 +96,8 @@ function Terms() {
                 </li>
               </ul>
 
-              <h6 className="fw-medium txt-warning mb-2">Online Payments</h6>
-              <p className="fw-medium text-dark mb-2">
+              <h6 className="fw-web txt-warning mb-2">Online Payments</h6>
+              <p className="fw-web text-dark mb-2">
                 {" "}
                 This online payment system is provided by DoAram. DoAram may
                 update these terms from time to time and any changes will be
@@ -106,7 +106,7 @@ function Terms() {
                 DoAram is India.
               </p>
 
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 {" "}
                 Please read these terms carefully before using the online
                 payment facility. Using the online payment facility on this
@@ -114,12 +114,12 @@ function Terms() {
                 accept these terms do not use this facility.
               </p>
 
-              <h6 className="fw-medium txt-warning mb-2">
+              <h6 className="fw-web txt-warning mb-2">
                 {" "}
                 All payments are subject to the following conditions:-
               </h6>
 
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 {" "}
                 The description of services of match making are specific to your
                 need, when you log in with your unique password. Normally
@@ -127,7 +127,7 @@ function Terms() {
                 activity).
               </p>
 
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 {" "}
                 All Fees quoted are in Indian Rupees. The DoAram reserves the
                 right to change the fees at any time.

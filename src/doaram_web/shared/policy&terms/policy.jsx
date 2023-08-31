@@ -13,8 +13,8 @@ function Policy() {
         <div className="p-5" style={{background: "#fff",borderradius:"5px"}}>
           <div className="row ">
             <div className=" wow fadeIn" data-wow-delay="0.5s">
-              <h3 className="fw-medium txt-warning mb-2">Privacy Policy</h3>
-              <p className="fw-medium text-dark mb-2">
+              <h3 className="fw-web txt-warning mb-2">Privacy Policy</h3>
+              <p className="fw-web text-dark mb-2">
                 DoAram is committed to respect the privacy of its users who
                 access or use the website, www.doaram.com. Your privacy is
                 important to us. We endeavor our best to maintain the highest
@@ -23,7 +23,7 @@ function Policy() {
                 the following statement to learn about our information gathering
                 and dissemination process.
               </p>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 This Privacy Policy ('Policy') is published in accordance with
                 the provisions of the Indian Information Technology Act, 2000
                 and the rules made there under, specifically, the Indian
@@ -32,7 +32,7 @@ function Policy() {
                 2011 and the Indian Information Technology (Intermediary
                 Guidelines) Rules, 2011.
               </p>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 The purpose of this Policy, as amended from time to time, is to
                 give you an understanding on how DoAram intends to collect,
                 receive, posses, store, deal or handle information you provide
@@ -44,11 +44,11 @@ function Policy() {
                 subject to the Terms of Use and should be read along with the
                 Terms of Use at all times.
               </p>
-              <h6 className="fw-medium txt-warning mb-2">
+              <h6 className="fw-web txt-warning mb-2">
                 Collection of Personal Information, other information and its
                 usage:
               </h6>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 This Privacy Policy explains the nature of personal and
                 non-personal information that DoAram collects or receives and
                 the manner in which it possess, stores, deals or handles such
@@ -56,14 +56,14 @@ function Policy() {
                 data that can be used to uniquely identify or contact a single
                 person ('Personal Information').
               </p>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 Personal Information for the purposes of this Policy shall
                 include, but not limited to, information regarding Your name,
                 photograph, address, telephone number, date of birth, gender,
                 e-mail address, financial information details, Facebook profile,
                 contacts, etc.
               </p>
-              <h6 className="fw-medium txt-warning mb-2">
+              <h6 className="fw-web txt-warning mb-2">
                 You may need to provide your Personal Information to DoAram
                 during the course of using the Website FOR several purposes,
                 such as:
@@ -93,25 +93,25 @@ function Policy() {
                   history.
                 </li>
               </ul>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 For your assistance, wherever possible, we will indicate which
                 fields are required and which fields are optional.
               </p>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 Once you provide us with your Personal Information, such
                 Personal Information is deemed to have been provided to us with
                 Your consent. If you do not agree to the Policy or are not
                 comfortable sharing the Information we advise you that you
                 should not share or disclose any Personal Information to us.
               </p>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 You always have the option not to provide information by
                 choosing not to use a particular service or feature on the
                 Website. You may even amend or delete the information provided
                 to us at any point in time. However, this may affect your use of
                 the Website or some of its features.
               </p>
-              <h6 className="fw-medium txt-warning mb-2">
+              <h6 className="fw-web txt-warning mb-2">
                 The information collected by DoAram from You may be used to:
               </h6>
               <ul>
@@ -167,7 +167,7 @@ function Policy() {
                   law. (Collectively referred to as ('Purposes'))
                 </li>
               </ul>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 In addition to the above, at times, we use third-party service
                 providers to provide ads on our behalf across the internet and
                 sometimes on the Website. Such third-party service providers may
@@ -176,7 +176,7 @@ function Policy() {
                 identifiable information is however collected or used in this
                 process by such third party service providers.
               </p>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 You do not object to DoAram sharing your Personal Information
                 such as, but not limited to, Full Name, donation or contribution
                 amount, with the respective campaign creators and the
@@ -190,14 +190,14 @@ function Policy() {
                 creator may not be able to offer you the reward that you have
                 chosen.
               </p>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 As part of our commitment to respect Your privacy, DoAram DOES
                 NOT trade or sell Your Personal Information in any manner,
                 except as specified herein or if express consent is sought from
                 You.
               </p>
-              <h6 className="fw-medium txt-warning mb-2">Authorization</h6>
-              <p className="fw-medium text-dark mb-2">
+              <h6 className="fw-web txt-warning mb-2">Authorization</h6>
+              <p className="fw-web text-dark mb-2">
                 You authorize DoAram to exchange, transfer, share, part with all
                 information (Personal Information and/or any information
                 provided by You), across borders and from your country and
@@ -207,10 +207,10 @@ function Policy() {
                 specified under this Policy or to fulfill our obligations
                 towards You or as may be required by law.
               </p>
-              <h6 className="fw-medium txt-warning mb-2">
+              <h6 className="fw-web txt-warning mb-2">
                 Information placed on your computer
               </h6>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 DoAram may store some information such as ‘cookies’ on Your
                 computer. You can erase or choose to block these cookies from
                 your computer. You can configure your computer's browser to
@@ -218,14 +218,14 @@ function Policy() {
                 option to accept or refuse the cookie. However, this may impact
                 your experience using the Website in certain instances.
               </p>
-              <h6 className="fw-medium txt-warning mb-2">Security</h6>
-              <p className="fw-medium text-dark mb-2">
+              <h6 className="fw-web txt-warning mb-2">Security</h6>
+              <p className="fw-web text-dark mb-2">
                 We have adopted reasonable security practices and procedure to
                 ensure that the Personal Information collected is secure. Your
                 Personal Information is held on secure servers. You agree that
                 such measures are secured and adequate.
               </p>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 While we will endeavor to take all reasonable and appropriate
                 steps to keep secure any information which we hold about You and
                 prevent unauthorized access, and You acknowledge that the
@@ -235,8 +235,8 @@ function Policy() {
                 security or unintended loss or disclosure of information caused
                 by us in relation to your Personal Information.
               </p>
-              <h6 className="fw-medium txt-warning mb-2">Access</h6>
-              <p className="fw-medium text-dark mb-2">
+              <h6 className="fw-web txt-warning mb-2">Access</h6>
+              <p className="fw-web text-dark mb-2">
                 If you need to update or correct your Personal Information, you
                 may send updates, and corrections to us at info@doaram.com or
                 make them yourself directly by clicking on My Profile at
@@ -244,7 +244,7 @@ function Policy() {
                 the changes and/or address your grievances within a reasonable
                 period of time.
               </p>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 Further, You will have an option to withdraw your consent given
                 earlier, provided such withdrawal of the consent is intimated to
                 us in writing at info@doaram.com. If you do not provide us
@@ -253,15 +253,15 @@ function Policy() {
                 option not to fulfill the purposes for which the said Personal
                 Information was sought.
               </p>
-              <h6 className="fw-medium txt-warning mb-2">Force Majeure</h6>
-              <p className="fw-medium text-dark mb-2">
+              <h6 className="fw-web txt-warning mb-2">Force Majeure</h6>
+              <p className="fw-web text-dark mb-2">
                 Notwithstanding anything contained in this Policy or elsewhere,
                 DoAram shall not be held responsible for any loss, damage or
                 misuse of Your Personal Information, if such loss, damage or
                 misuse is attributable to a Force Majeure Event (as defined
                 below).
               </p>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 A 'Force Majeure Event' shall mean any event that is beyond the
                 reasonable control of DoAram and shall include, without
                 limitation, sabotage, fire, flood, explosion, acts of God, civil
@@ -270,8 +270,8 @@ function Policy() {
                 unauthorised access to computer data and storage device,
                 computer crashes, breach of security and encryption, etc.
               </p>
-              <h6 className="fw-medium txt-warning mb-2">Consent</h6>
-              <p className="fw-medium text-dark mb-2">
+              <h6 className="fw-web txt-warning mb-2">Consent</h6>
+              <p className="fw-web text-dark mb-2">
                 By providing us your Information or by making use of the
                 facilities provided by the Website, You hereby consent to the
                 collection, storage, processing, transferring and sharing of any
@@ -285,12 +285,12 @@ function Policy() {
                 cause any loss or wrongful gain to You if the same is used for
                 the purposes stated in this Policy.
               </p>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 You acknowledge that You are providing your Information out of
                 your free will.
               </p>
-              <h6 className="fw-medium txt-warning mb-2">Grievance officer</h6>
-              <p className="fw-medium text-dark mb-2">
+              <h6 className="fw-web txt-warning mb-2">Grievance officer</h6>
+              <p className="fw-web text-dark mb-2">
                 In accordance with Information Technology Act, 2000 and rules
                 made there under, the name and contact details of the Grievance
                 Officer who can be contacted with respect to any complaints,
@@ -298,21 +298,21 @@ function Policy() {
                 breach of DoAram’s Terms of Use, Privacy Policy and other
                 policies or questions is provided below:
               </p>
-              <h6 className="fw-medium txt-warning mb-2">Refund Policy</h6>
-              <p className="fw-medium text-dark mb-2">
+              <h6 className="fw-web txt-warning mb-2">Refund Policy</h6>
+              <p className="fw-web text-dark mb-2">
                 If the Customer leaves the DoAram before they complete their
                 service period, there shall be no entitlement to a refund of
                 paid service fees.
               </p>
-              <p className="fw-medium text-dark mb-2">
+              <p className="fw-web text-dark mb-2">
                 Refunds, if applicable, at the discretion of the Management,
                 will only be made to the debit/credit card used for the original
                 transaction. For the avoidance of doubt nothing in this Policy
                 shall require the DoAram to refund the Fees (or part thereof)
                 unless such Fees (or part thereof) have previously been paid.
               </p>
-             <h6 className="fw-medium txt-warning mb-2">DND Policy</h6>
-              <p className="fw-medium text-dark mb-2">
+             <h6 className="fw-web txt-warning mb-2">DND Policy</h6>
+              <p className="fw-web text-dark mb-2">
                 {" "}
                 If you wish to stop any further sms/email alerts/contacts from
                 our side, all you need to do is to send an email:-

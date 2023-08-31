@@ -9,7 +9,7 @@ function Question() {
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              <h1 className="fw-medium txt-warning mb-2">
+              <h1 className="fw-web txt-warning mb-2">
                 Frequently Asked Questions
               </h1>
               <div className="row pt-2">

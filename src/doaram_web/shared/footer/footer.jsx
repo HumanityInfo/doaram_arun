@@ -91,9 +91,9 @@ function Footer() {
             <div className="col-lg-3 col-md-6">
               <h5 className="text-white mb-4">Business Hours</h5>
               <p className="mb-1">Monday - Friday</p>
-              <h6 className="text-light">09:00 am - 06:30 pm</h6>
+              <h6 className="">09:00 am - 06:30 pm</h6>
               <p className="mb-1">Saturday & Sunday</p>
-              <h6 className="text-light">Closed</h6>
+              <h6 className="">Closed</h6>
               <br />
               <h5 className="text-white mb-4">Others</h5>
               <Link to="/terms" className="btn btn-link">

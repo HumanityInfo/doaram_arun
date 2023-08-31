@@ -66,8 +66,8 @@ function App() {
     ADMIN: "Admin User",
   };
   // const CurrentUser_TYPE = User_Types.ADMIN;
-  // const CurrentUser_TYPE = User_Types.NGO;
-  const CurrentUser_TYPE = User_Types.CORP;
+  const CurrentUser_TYPE = User_Types.NGO;
+  // const CurrentUser_TYPE = User_Types.CORP;
 
   function NGOElement({ children }) {
     if (CurrentUser_TYPE === User_Types.NGO) {

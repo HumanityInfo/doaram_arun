@@ -15,13 +15,13 @@ function Part() {
                   <h1 className="h3 text-white mb-2">
                     Become a part of DoAram
                   </h1>
-                  <p className="fw-medium text-white mb-2">
+                  <p className="fw-web text-white mb-2">
                     Plan - Develop - Uplift
                   </p>
-                  <p className="fw-medium text-dark mb-2">
+                  <p className="fw-web text-dark mb-2">
                     Empower your NGO with the Power of Insights!
                   </p>
-                  <p className="fw-medium text-dark mb-2">
+                  <p className="fw-web text-dark mb-2">
                     NGOs play a critical part in developing the society,
                     improving communities, and promoting citizen participation.
                     DoAram offers ERP solution that features
