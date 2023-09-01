@@ -165,27 +165,54 @@ function Header() {
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="defaultDropdown">
                   <li>
-                    <a className="dropdown-item ngoPanel">
-                      {" "}
-                      <Link to="/signin">NGO</Link>
-                    </a>
+                    <Link to="/ngosignin">
+                      <a className="dropdown-item ngoPanel"> NGO</a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item corpPanel">Corporate</a>
+                    <Link to="/corpsignin">
+                      <a className="dropdown-item corpPanel"> Corporate</a>
+                    </Link>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item adminPanel">Admin</a>
+                    <Link to="/corpsignin">
+                      <a className="dropdown-item adminPanel">Admin</a>
+                    </Link>
                   </li>
                 </ul>
               </div>
-              <a className="ngoPanel ms-1">
+              {/* <a className="ngoPanel ms-1">
                 <button type="button" className="btn btn-warning">
                   Sign-up
                 </button>
-              </a>
+              </a> */}
+              <div className="btn-group ">
+                <button
+                  className="btn dropdown-toggle btn-warning ms-2"
+                  type="button"
+                  id="defaultDropdown"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="true"
+                  aria-expanded="false"
+                >
+                  Sign-up
+                </button>
+                <ul className="dropdown-menu" aria-labelledby="defaultDropdown">
+                  <li>
+                    <Link to="/signup">
+                      <a className="dropdown-item ngoPanel"> NGO</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/corpsignup">
+                      <a className="dropdown-item corpPanel">Corporate</a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>

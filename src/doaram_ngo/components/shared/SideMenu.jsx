@@ -37,7 +37,7 @@ function SideMenu(props) {
               {props.type === User_Types.NGO ? (
                 <>
                   {" "}
-                  <li className="nav-item">
+                  <li className="nav-item text-white">
                     <NavLink
                       className="nav-link nav-linknca"
                       aria-current="page"
@@ -52,7 +52,7 @@ function SideMenu(props) {
               {props.type === User_Types.CORP? (
                 <>
                   {" "}
-                  <li className="nav-item">
+                  <li className="nav-item text-white">
                     <NavLink
                       className="nav-link nav-linknca"
                       aria-current="page"
@@ -67,7 +67,7 @@ function SideMenu(props) {
               {props.type === User_Types.ADMIN ? (
                 <>
                   {" "}
-                  <li className="nav-item">
+                  <li className="nav-item text-white">
                     <NavLink
                       className="nav-link nav-linknca"
                       aria-current="page"

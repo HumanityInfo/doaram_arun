@@ -29,6 +29,7 @@ function Contact() {
                 <Link to="tel:+0123456789" className="btn btn-secondary  px-4">
                   Call Us <i className="fa fa-arrow-right ms-2"></i>
                 </Link>
+                
               </div>
             </div>
             <div
@@ -102,6 +103,7 @@ function Contact() {
               <p className="fw-web text-uppercase text-dark mb-2">
                 Contact Us
               </p>
+              
               <h1 className="display-5 mb-4">
                 We would love to hear from you.
               </h1>
@@ -117,6 +119,7 @@ function Contact() {
                     </div>
                     <div className="ms-3">
                       <h6>Call Us</h6>
+                      
                       <span>+91 95858 24555</span>
                     </div>
                   </div>
