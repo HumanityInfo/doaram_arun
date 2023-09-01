@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import React, { useRef, useEffect } from "react";
 
-import AppRoute from "../src/doaram_ngo/utils/AppRoute";
-import ScrollReveal from "../src/doaram_ngo/utils/ScrollReveal";
+import AppRoute from "../src/doaram/utils/AppRoute";
+import ScrollReveal from "../src/doaram/utils/ScrollReveal";
 import ReactGA from "react-ga";
 
 import Home from "./doaram_web/home/home.jsx";
@@ -24,36 +24,36 @@ import ScrollToTop from "./doaram_web/scrolltotop.jsx";
 // import "datatables.net-dt/js/dataTables.dataTables";
 // import "datatables.net-dt/css/jquery.dataTables.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../src/doaram_ngo/assets/theme/adminlte.min.css";
+import "../src/doaram/assets/theme/adminlte.min.css";
 
-import NGO_Login from "./doaram_ngo/components/ngo/NGO_Login";
-import Corp_Login from "./doaram_ngo/components/corp/Corp_Login";
-import Admin_Login from "./doaram_ngo/components/admin/Admin_Login";
-import NGO_Layout from "./doaram_ngo/components/shared/NGO_Layout";
-import Signup from "./doaram_ngo/components/ngo/Signup";
-import Corp_Signup from "./doaram_ngo/components/corp/Corp_Signup";
-import SignUpSelector from "./doaram_ngo/components/ngo/SignUpSelector";
-import Corp_SignUpSelector from "./doaram_ngo/components/corp/Corp_SignUpSelector";
-import NGO_Cause from "./doaram_ngo/components/ngo/NGO_Cause";
-import CauseDetails from "./doaram_ngo/components/ngo/CauseDetails";
-import NGO_Profile from "./doaram_ngo/components/ngo/NGO_Profile";
-import NGO_Plan from "./doaram_ngo/components/ngo/NGO_Plan";
-import Error404 from "./doaram_ngo/components/ngo/Error404";
-import ForgotPassword from "./doaram_ngo/components/shared/ForgotPassword";
-import Website from "./doaram_ngo/components/ngo/website";
-import Corp_NGOs from "./doaram_ngo/components/ngo/Corp_NGOs";
-import NGO_CSR_Request from "./doaram_ngo/components/ngo/NGO_CSR_Request";
-import Notification from "./doaram_ngo/components/ngo/Notification";
-import TermsConditions from "./doaram_ngo/components/ngo/TermsConditions";
-import Admin_Cause from "./doaram_ngo/components/admin/Admin_Cause";
-import Admin_Profile from "./doaram_ngo/components/admin/Admin_Profile";
-import Admin_NGO from "./doaram_ngo/components/admin/Admin_NGO";
-import Corp_NGO from "./doaram_ngo/components/corp/Corp_NGO";
-import Corp_Profile from "./doaram_ngo/components/corp/Corp_Profile";
-// import Dashboard from "./doaram_ngo/components/shared/Dashboard";
-import NGO_Dashboard from "./doaram_ngo/components/ngo/NGO_Dashboard";
-import Corp_Dashboard from "./doaram_ngo/components/corp/Corp_Dashboard";
-import Admin_Dashboard from "./doaram_ngo/components/admin/Admin_Dashboard";
+import NGO_Login from "./doaram/components/ngo/NGO_Login";
+import Corp_Login from "./doaram/components/corp/Corp_Login";
+import Admin_Login from "./doaram/components/admin/Admin_Login";
+import NGO_Layout from "./doaram/components/shared/NGO_Layout";
+import Signup from "./doaram/components/ngo/Signup";
+import Corp_Signup from "./doaram/components/corp/Corp_Signup";
+import SignUpSelector from "./doaram/components/ngo/SignUpSelector";
+import Corp_SignUpSelector from "./doaram/components/corp/Corp_SignUpSelector";
+import NGO_Cause from "./doaram/components/ngo/NGO_Cause";
+import CauseDetails from "./doaram/components/ngo/CauseDetails";
+import NGO_Profile from "./doaram/components/ngo/NGO_Profile";
+import NGO_Plan from "./doaram/components/ngo/NGO_Plan";
+import Error404 from "./doaram/components/ngo/Error404";
+import ForgotPassword from "./doaram/components/shared/ForgotPassword";
+import Website from "./doaram/components/ngo/website";
+import Corp_NGOs from "./doaram/components/ngo/Corp_NGOs";
+import NGO_CSR_Request from "./doaram/components/ngo/NGO_CSR_Request";
+import Notification from "./doaram/components/ngo/Notification";
+import TermsConditions from "./doaram/components/ngo/TermsConditions";
+import Admin_Cause from "./doaram/components/admin/Admin_Cause";
+import Admin_Profile from "./doaram/components/admin/Admin_Profile";
+import Admin_NGO from "./doaram/components/admin/Admin_NGO";
+import Corp_NGO from "./doaram/components/corp/Corp_NGO";
+import Corp_Profile from "./doaram/components/corp/Corp_Profile";
+// import Dashboard from "./doaram/components/shared/Dashboard";
+import NGO_Dashboard from "./doaram/components/ngo/NGO_Dashboard";
+import Corp_Dashboard from "./doaram/components/corp/Corp_Dashboard";
+import Admin_Dashboard from "./doaram/components/admin/Admin_Dashboard";
 
 function App() {
   // Initialize Google Analytics

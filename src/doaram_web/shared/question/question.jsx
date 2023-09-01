@@ -32,7 +32,7 @@ function Question() {
                   <ul className="nav nav-tabs" id="myTab" role="tablist">
                     <li className="nav-item" role="presentation">
                       <button
-                        className="nav-link active"
+                        className="nav-link active txt-warning"
                         id="general-tab"
                         data-bs-toggle="tab"
                         data-bs-target="#general"
@@ -46,7 +46,7 @@ function Question() {
                     </li>
                     <li className="nav-item" role="presentation">
                       <button
-                        className="nav-link"
+                        className="nav-link txt-warning"
                         id="ngo-tab"
                         data-bs-toggle="tab"
                         data-bs-target="#ngo"
@@ -60,7 +60,7 @@ function Question() {
                     </li>
                     <li className="nav-item" role="presentation">
                       <button
-                        className="nav-link"
+                        className="nav-link txt-warning "
                         id="corporate-tab"
                         data-bs-toggle="tab"
                         data-bs-target="#corporate"
@@ -74,7 +74,7 @@ function Question() {
                     </li>
                     <li className="nav-item" role="presentation">
                       <button
-                        className="nav-link"
+                        className="nav-link txt-warning"
                         id="individual-tab"
                         data-bs-toggle="tab"
                         data-bs-target="#individual"

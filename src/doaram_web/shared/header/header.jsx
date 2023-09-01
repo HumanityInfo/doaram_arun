@@ -178,7 +178,7 @@ function Header() {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <Link to="/corpsignin">
+                    <Link to="/adminsignin">
                       <a className="dropdown-item adminPanel">Admin</a>
                     </Link>
                   </li>

@@ -4902,7 +4902,7 @@ div.accordion-body{
 /* Web home page accordion work */
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #ffffff;
+  color: #ffffff !important;
   background: linear-gradient(275.07deg, #F2BF35 -0.15%, #D69228 100%);
   border-color: #FF9800 #ffbf00 #fff;
 }
