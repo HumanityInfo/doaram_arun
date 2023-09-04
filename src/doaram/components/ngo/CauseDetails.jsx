@@ -3,6 +3,9 @@ import { NavLink, Link } from "react-router-dom";
 import NGO_Layout from "../shared/NGO_Layout";
 
 function CauseDetails(props) {
+  const CauseSubmit = () => {
+    window.showCauseSubmitModel("", "/CauseDetails");
+  };
   return (
     <NGO_Layout type={props.type}>
       <div class="content-wrapper">
@@ -12,7 +15,7 @@ function CauseDetails(props) {
               <div class="col-sm-8 row">
                 <div class="col">
                   <NavLink to="/NGO_Cause">
-                    <button class="btn btn-info btn-sm">
+                    <button class="btnnca btn-info btn-sm">
                       <i class="fa fa-arrow-left"></i> Back To Cause
                     </button>
                   </NavLink>
@@ -95,7 +98,7 @@ function CauseDetails(props) {
                       </small>
                       <div class="mx-5 text-end mb-3">
                         <NavLink to="/NGO_Cause">
-                          <button class="btn btn-gold btn-sm">
+                          <button class="btnnca btn-gold btn-sm">
                             <i class="fa fa-pencil-square-o"></i> Submit for
                             review
                           </button>
@@ -193,14 +196,14 @@ function CauseDetails(props) {
                             />
                             <span class="input-group-btn">
                               <label
-                                class="btn btn-default"
+                                class="btnnca btn-default"
                                 type="button"
                                 for="txtFldCampaignImage"
                               >
                                 <i className="fa fa-upload themeCol-pink"></i>
                               </label>
                               <label
-                                class="btn btn-default btn-reset"
+                                class="btnnca btn-default btn-reset"
                                 type="button"
                               >
                                 <i className="fa fa-trash themeCol-pink"></i>
@@ -238,7 +241,7 @@ function CauseDetails(props) {
                           <div class="col-sm-4">
                             <div class="input-group">
                               <span class="input-group-btn">
-                                <div class="btn btn-default">
+                                <div class="btnnca btn-default">
                                   <i class="fa fa-inr"></i>
                                 </div>
                               </span>
@@ -274,7 +277,7 @@ function CauseDetails(props) {
                                 id="txtNGOStartDate"
                               />
                               <span class="input-group-btn">
-                                <div class="btn btn-default">
+                                <div class="btnnca btn-default">
                                   <i className="fa fa-calendar themeCol-pink"></i>
                                 </div>
                               </span>
@@ -299,7 +302,7 @@ function CauseDetails(props) {
                                 id="txtNGOEndDate"
                               />
                               <span class="input-group-btn">
-                                <div class="btn btn-default">
+                                <div class="btnnca btn-default">
                                   <i className="fa fa-calendar themeCol-pink"></i>
                                 </div>
                               </span>
@@ -320,15 +323,15 @@ function CauseDetails(props) {
                           <a class="causelinks" target="_blank">
                             <div class="input-group">
                               <input
-                                class="btn btn-gold btn-sm w-75 text-start"
+                                class="btnnca btn-gold btn-sm w-75 text-start"
                                 type="text"
                                 id="txtNgoShortURL"
                                 name="txtNgoShortURL"
                                 readonly="true"
                                 value="doaram.com/cause/c-T090101"
                               />
-                              <span class="input-group-btn copyclipboard">
-                                <div class="btn btn-default">
+                              <span class="input-group-btnnca copyclipboard">
+                                <div class="btnnca btn-default">
                                   <i class="fa fa-copy themeCol-pink "></i>
                                 </div>
                               </span>
@@ -428,14 +431,14 @@ function CauseDetails(props) {
                             />
                             <span class="input-group-btn">
                               <label
-                                class="btn btn-default"
+                                class="btnnca btn-default"
                                 type="button"
                                 for="txtFldGallery1"
                               >
                                 <i className="fa fa-upload themeCol-pink"></i>
                               </label>
                               <label
-                                class="btn btn-default btn-reset"
+                                class="btnnca btn-default btn-reset"
                                 type="button"
                               >
                                 <i className="fa fa-trash themeCol-pink"></i>
@@ -484,14 +487,14 @@ function CauseDetails(props) {
                             />
                             <span class="input-group-btn">
                               <label
-                                class="btn btn-default"
+                                class="btnnca btn-default"
                                 type="button"
                                 for="txtFldGallery2"
                               >
                                 <i className="fa fa-upload themeCol-pink"></i>
                               </label>
                               <label
-                                class="btn btn-default btn-reset"
+                                class="btnnca btn-default btn-reset"
                                 type="button"
                               >
                                 <i className="fa fa-trash themeCol-pink"></i>
@@ -540,14 +543,14 @@ function CauseDetails(props) {
                             />
                             <span class="input-group-btn">
                               <label
-                                class="btn btn-default"
+                                class="btnnca btn-default"
                                 type="button"
                                 for="txtFldSuppDoc1"
                               >
                                 <i className="fa fa-upload themeCol-pink"></i>
                               </label>
                               <label
-                                class="btn btn-default btn-reset"
+                                class="btnnca btn-default btn-reset"
                                 type="button"
                               >
                                 <i className="fa fa-trash themeCol-pink"></i>
@@ -598,14 +601,14 @@ function CauseDetails(props) {
                             />
                             <span class="input-group-btn">
                               <label
-                                class="btn btn-default"
+                                class="btnnca btn-default"
                                 type="button"
                                 for="txtFldSuppDoc2"
                               >
                                 <i className="fa fa-upload themeCol-pink"></i>
                               </label>
                               <label
-                                class="btn btn-default btn-reset"
+                                class="btnnca btn-default btn-reset"
                                 type="button"
                               >
                                 <i className="fa fa-trash themeCol-pink"></i>
@@ -658,7 +661,7 @@ function CauseDetails(props) {
                             type="button"
                             name="SubmitDetail"
                             id="SubmitDetail"
-                            class="btn btn-gold btn-sm   "
+                            class="btnnca btn-gold btn-sm   "
                             // onClick={this.CauseSubmit}
                           >
                             <i class="fa fa-pencil-square-o"></i> Submit for
@@ -711,13 +714,13 @@ function CauseDetails(props) {
                                 <i class="fa fa-times"></i>&nbsp; Upload Pending
                               </td>
                               <td>
-                                <span class="btn btn-danger btn-sm">
+                                <span class="btnnca btn-danger btn-sm">
                                   <i class="fas fa-trash-alt"></i>
                                 </span>
-                                <span class="btn btn-warning btn-sm">
+                                <span class="btnnca btn-warning btn-sm">
                                   <i class="fas fa-upload"></i>
                                 </span>
-                                <span class="btn btn-info btn-sm">
+                                <span class="btnnca btn-info btn-sm">
                                   <i class="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
@@ -736,13 +739,13 @@ function CauseDetails(props) {
                                 <i class="fa fa-times"></i>&nbsp; Upload Pending
                               </td>
                               <td>
-                                <span class="btn btn-danger btn-sm">
+                                <span class="btnnca btn-danger btn-sm">
                                   <i class="fas fa-trash-alt"></i>
                                 </span>
-                                <span class="btn btn-warning btn-sm">
+                                <span class="btnnca btn-warning btn-sm">
                                   <i class="fas fa-upload"></i>
                                 </span>
-                                <span class="btn btn-info btn-sm">
+                                <span class="btnnca btn-info btn-sm">
                                   <i class="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
@@ -761,13 +764,13 @@ function CauseDetails(props) {
                                 <i class="fa fa-times"></i>&nbsp; Upload Pending
                               </td>
                               <td>
-                                <span class="btn btn-danger btn-sm">
+                                <span class="btnnca btn-danger btn-sm">
                                   <i class="fas fa-trash-alt"></i>
                                 </span>
-                                <span class="btn btn-warning btn-sm">
+                                <span class="btnnca btn-warning btn-sm">
                                   <i class="fas fa-upload"></i>
                                 </span>
-                                <span class="btn btn-info btn-sm">
+                                <span class="btnnca btn-info btn-sm">
                                   <i class="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
@@ -786,13 +789,13 @@ function CauseDetails(props) {
                                 <i class="fa fa-times"></i>&nbsp; Upload Pending
                               </td>
                               <td>
-                                <span class="btn btn-danger btn-sm">
+                                <span class="btnnca btn-danger btn-sm">
                                   <i class="fas fa-trash-alt"></i>
                                 </span>
-                                <span class="btn btn-warning btn-sm">
+                                <span class="btnnca btn-warning btn-sm">
                                   <i class="fas fa-upload"></i>
                                 </span>
-                                <span class="btn btn-info btn-sm">
+                                <span class="btnnca btn-info btn-sm">
                                   <i class="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
@@ -811,13 +814,13 @@ function CauseDetails(props) {
                                 <i class="fa fa-times"></i>&nbsp; Upload Pending
                               </td>
                               <td>
-                                <span class="btn btn-danger btn-sm">
+                                <span class="btnnca btn-danger btn-sm">
                                   <i class="fas fa-trash-alt"></i>
                                 </span>
-                                <span class="btn btn-warning btn-sm">
+                                <span class="btnnca btn-warning btn-sm">
                                   <i class="fas fa-upload"></i>
                                 </span>
-                                <span class="btn btn-info btn-sm">
+                                <span class="btnnca btn-info btn-sm">
                                   <i class="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
@@ -856,7 +859,7 @@ function CauseDetails(props) {
                                 </span>{" "}
                               </div>
                               <button
-                                class="btn btn-white causelinks
+                                class="btnnca btn-white causelinks
  "
                               >
                                 <i class="externallinkIcon"></i>
@@ -915,7 +918,7 @@ function CauseDetails(props) {
                                 </span>{" "}
                               </div>
                               <button
-                                class="btn btn-white causelinks
+                                class="btnnca btn-white causelinks
  "
                               >
                                 <i class="externallinkIcon  "></i>
@@ -1000,7 +1003,7 @@ function CauseDetails(props) {
                       <tr>
                         <th>Cause Category</th>
                         <td>
-                          <button type="button" class="btn btn-info btn-sm">
+                          <button type="button" class="btnnca btn-info btn-sm">
                             Children
                           </button>
                         </td>
@@ -1009,7 +1012,7 @@ function CauseDetails(props) {
                       <tr>
                         <th>DoAram Verification Status</th>
                         <td>
-                          <button type="button" class="btn btn-light btn-sm">
+                          <button type="button" class="btnnca btn-light btn-sm">
                             <i class="fa fa-pencil-square-o"></i>&nbsp;Verified
                           </button>
                         </td>

@@ -1,8 +1,41 @@
 import React from "react";
 import NGO_Layout from "../shared/NGO_Layout";
 import { NavLink } from "react-router-dom";
+import DataTable from "datatables.net-dt";
+import "datatables.net-buttons-dt";
+import "datatables.net-responsive-dt";
 
 function NGO_Cause(props) {
+  let causeDatatable = new DataTable("#causedtDetails", {
+    paging: false,
+    scrollCollapse: true,
+    destroy: true,
+    responsive: false,
+    ordering: false,
+    searching: false,
+    scrollY: "40vh",
+    scrollX: true,
+    scroller: false,
+    scrollCollapse: true,
+    paging: false,
+    filter: true,
+    columnDefs: [],
+    dom: '<<"top" ip>flt>',
+    columnDefs: [
+      { width: "20px", targets: [0, 1] },
+      {
+        className: "dt-head-center text-center",
+        targets: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+        orderable: false,
+        searchable: false,
+      },
+    ],
+    fnDrawCallback: function (oSettings) {
+      if (oSettings._iDisplayLength > oSettings.fnRecordsDisplay()) {
+      }
+    },
+  }).draw();
+
   return (
     <NGO_Layout type={props.type}>
       <div className="content-wrapper">
