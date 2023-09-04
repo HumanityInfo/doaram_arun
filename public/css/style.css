@@ -4848,6 +4848,7 @@ form {
 /* ak overwrite */
 .form-floating {
   background-color: white;
+  max-height: 72px !important;
 }
 input:focus,
 input.form-control:focus {
@@ -4928,4 +4929,22 @@ div.accordion-body{
   text-decoration-color: #d89529 !important;
   text-decoration-thickness: 0.125em !important;
   text-underline-offset: 5.5px !important;
+}
+.ant-form-item{
+  margin-bottom: 4px !important;
+}
+.ant-form-item-label{
+  padding-bottom: 6px !important;
+  margin-top: 9px;
+  margin-left: 8px;
+}
+.loginas-span{
+  float: left;
+  margin-left: 8px;
+}
+.rememberme{
+  font-weight: 600 !important;
+}
+.login .ant-form-item-control-input-content{
+  max-width: 75px !important;
 }

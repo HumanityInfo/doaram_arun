@@ -1,4 +1,5 @@
-import http from "../http-common";
+import http from "../../http-common";
+
 class DataService { 
   getAll() {
     return http.get("/mt_user");
@@ -7,6 +8,7 @@ class DataService {
     return http.get(`/mt_user/${id}`);
   }
   create(url,data) {
+    // console.log(data);
     return http.post(url, data);// /api/employee(data)
   }
   update(url, data) {
