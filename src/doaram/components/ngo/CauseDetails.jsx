@@ -5,46 +5,46 @@ import NGO_Layout from "../shared/NGO_Layout";
 function CauseDetails(props) {
   return (
     <NGO_Layout type={props.type}>
-      <div className="content-wrapper fontfamilynca">
-        <div className="content-header">
-          <div className="container-fluid">
-            <div className="row mb-2">
-              <div className="col-sm-8 row">
-                <div className="col">
+      <div class="content-wrapper">
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-8 row">
+                <div class="col">
                   <NavLink to="/NGO_Cause">
-                    <button className="btnnca btn-info btn-sm">
-                      <i className="fa fa-arrow-left"></i> Back To Cause
+                    <button class="btn btn-info btn-sm">
+                      <i class="fa fa-arrow-left"></i> Back To Cause
                     </button>
                   </NavLink>
                 </div>
               </div>
-              <div className="col-sm-4">
-                <ol className="breadcrumb breadcrumbncafloat-sm-right">
-                  <li className="breadcrumb-item">
-                    <Link to="#">NGO</Link>
+              <div class="col-sm-4">
+                <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item">
+                    <a href="#">NGO</a>
                   </li>
-                  <li className="breadcrumb-item active">
+                  <li class="breadcrumb-item active">
                     <NavLink to="/NGO_Cause">NGO Causes</NavLink>
                   </li>
-                  <li className="breadcrumb-item active">Create New Cause</li>
+                  <li class="breadcrumb-item active">Create New Cause</li>
                 </ol>
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-md-8">
-                <h5 className="m-0">&nbsp;Cause - Children's Library Fund</h5>
+            <div class="row">
+              <div class="col-md-8">
+                <h5 class="m-0">&nbsp;Cause - Children's Library Fund</h5>
               </div>
             </div>
           </div>
         </div>
-        <section className="content">
-          <div className="container-fluid">
-            <div className="row mt-0   p-3 mb-3">
+        <section class="content">
+          <div class="container-fluid">
+            <div class="row mt-0   p-3 mb-3">
               <nav>
-                <div className="nav nav-tabs" id="nav-tab" role="tablist">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
                   <button
-                    className="nav-link active"
+                    class="nav-link active"
                     id="nav-cause-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#nav-causedetails"
@@ -56,7 +56,7 @@ function CauseDetails(props) {
                     Cause Details
                   </button>
                   <button
-                    className="nav-link corporatelinks"
+                    class="nav-link corporatelinks"
                     id="nav-causedonations-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#nav-causedonations"
@@ -68,7 +68,7 @@ function CauseDetails(props) {
                     Donations
                   </button>
                   <button
-                    className="nav-link"
+                    class="nav-link"
                     id="nav-causehistory-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#nav-causehistory"
@@ -81,124 +81,130 @@ function CauseDetails(props) {
                   </button>
                 </div>
               </nav>
-              <div className="tab-content" id="nav-tabContent">
+              <div class="tab-content" id="nav-tabContent">
                 <div
-                  className="tab-pane fade show active"
+                  class="tab-pane fade show active"
                   id="nav-causedetails"
                   role="tabpanel"
                   aria-labelledby="nav-causedetails"
                 >
-                  <div className="card">
-                    <form className="  ms-5 mt-3 ">
-                      <div className="mx-5 text-end">
+                  <div class="card">
+                    <form class="  ms-5 mt-3 ">
+                      <small className="text-danger steps b  text-warning">
+                        * Denotes Mandatory fields.
+                      </small>
+                      <div class="mx-5 text-end mb-3">
                         <NavLink to="/NGO_Cause">
-                          <button className="btnnca btn-gold btn-sm">
-                            <i className="fa fa-pencil-square-o"></i> Edit cause
+                          <button class="btn btn-gold btn-sm">
+                            <i class="fa fa-pencil-square-o"></i> Submit for
+                            review
                           </button>
                         </NavLink>
                       </div>
-                      <div className="mb-3 row">
+
+                      <div class="mb-3 row">
                         <label
-                          htmlFor="selNgoCategory"
-                          className="col-sm-3 form-label"
+                          htmlFor="selNGOCategory"
+                          className="col-sm-2 col-form-label col-form-label-sm para b "
                         >
-                          <span className=" text-dark fw-semibold">
-                            &nbsp;Category
-                          </span>
+                          {" "}
+                          Category <small className="text-danger b">*</small>
                         </label>
-                        <div className="col-sm-4">
+                        <div class="col-sm-8">
                           <select
-                            className="form-control"
-                            name="selNgoCategory"
-                            id="selNgoCategory"
+                            className="form-select form-control  form-select-sm"
+                            id="selNGOCategory"
+                            name="selNGOCategory"
+                            multiple
+                            placeholder=""
+                            data-placeholder="Choose atleast one category"
                           >
-                            <option value="">Select Category</option>
-                            <option value="Advocacy">Advocacy</option>
+                            <option value=""> -- Select Category -- </option>
+                            <option value="Elderly">Elderly</option>
                             <option value="Animals">Animals</option>
                             <option value="Children">Children</option>
+                            <option value="Cultural Heritage">
+                              Cultural Heritage
+                            </option>
+                            <option value="Education">Education</option>
+                            <option value="Employment">Employment</option>
+                            <option value="Environment">Environment</option>
+                            <option value="Healthcare">Healthcare</option>
+                            <option value="Disaster Relief Works">
+                              Disaster Relief Works
+                            </option>
+                            <option value="Others">Others</option>
+                            <option value="Women Empowerment">
+                              Women Empowerment
+                            </option>
                             <option value="Community Mobilization">
                               Community Mobilization
                             </option>
-                            <option value="Cultural Heritage">
-                              Cultural Heritage
+                            <option value="Rural Development">
+                              Rural Development
+                            </option>
+                            <option value="Sustainable Livelihood">
+                              Sustainable Livelihood
                             </option>
                             <option value="Differently Abled">
                               Differently Abled
                             </option>
-                            <option value="Disaster Relief Works">
-                              Disaster Relief Works
-                            </option>
-                            <option value="Education">Education</option>
-                            <option value="Elderly">Elderly</option>
-                            <option value="Employment">Employment</option>
-                            <option value="Environment">Environment</option>
-                            <option value="Healthcare">Healthcare</option>
-                            <option value="Others">Others</option>
-                            <option value="Rural Development">
-                              Rural Development
-                            </option>
-                            <option value="Sustainable Livelihood ">
-                              Sustainable Livelihood
-                            </option>
-                            <option value="Women Empowerment">
-                              Women Empowerment
-                            </option>
-                            <option value="Donations">Donations</option>
+                            <option value="Advocacy">Advocacy</option>
                           </select>
                         </div>
                       </div>
 
-                      <div className="row mb-3">
+                      <div class="row mb-3">
                         <label
                           htmlFor="txtNgoTitle"
-                          className="col-sm-3 form-label"
+                          className="col-sm-2 col-form-label col-form-label-sm para b "
                         >
-                          <span className=" text-dark fw-semibold">
-                            {" "}
-                            Cause Title
-                          </span>
+                          Cause Title <small className="text-danger b">*</small>
                         </label>
-                        <div className="col-sm-8">
+                        <div class="col-sm-4">
                           <input
                             type="text"
-                            className="form-control"
+                            class="form-control"
                             id="txtNgoTitle"
                             name="txtNgoTitle"
+                            placeholder="Enter Cause Title"
                           />
                         </div>
                       </div>
 
-                      <div className="row mb-3">
+                      <div class="row mb-3">
                         <label
                           htmlFor="txtNgoTitleImage"
-                          className="col-sm-3  form-label "
+                          className="col-sm-2 col-form-label col-form-label-sm para b "
                         >
-                          <span className=" text-dark fw-semibold">
-                            Title Image{" "}
+                          Campaign image
+                          <span class="text-secondary font10">
+                            {" "}
+                            <br />( -- Optional -- )
                           </span>
                         </label>
-                        <div className="col-sm-8">
-                          <div className="input-group">
+                        <div class="col-sm-8">
+                          <div class="input-group input-file">
                             <input
-                              type="text"
-                              name="txtNgoTitleImage"
-                              id="txtNgoTitleImage"
-                              className="form-control"
-                              placeholder="No file selected"
-                              readonly
+                              type="file"
+                              class="form-control"
+                              name="files"
+                              id="txtFldCampaignImage"
                             />
-                            <span className="input-group-btn">
-                              <div className="btnnca btn-default  custom-file-uploader">
-                                <input
-                                  type="file"
-                                  name="file"
-                                  onchange="document.getElementById('txtNgoTitleImage').value = this.files.length ? this.files[0].name : ''"
-                                />
+                            <span class="input-group-btn">
+                              <label
+                                class="btn btn-default"
+                                type="button"
+                                for="txtFldCampaignImage"
+                              >
                                 <i className="fa fa-upload themeCol-pink"></i>
-                              </div>
-                              <div className="btnnca btn-default">
+                              </label>
+                              <label
+                                class="btn btn-default btn-reset"
+                                type="button"
+                              >
                                 <i className="fa fa-trash themeCol-pink"></i>
-                              </div>
+                              </label>
                             </span>
                           </div>
                           <div
@@ -210,623 +216,473 @@ function CauseDetails(props) {
                         </div>
                       </div>
 
-                      <div className="row mb-3">
+                      <div class="row mb-3">
                         <label
-                          htmlFor="txtNgoRequirement"
-                          className="col-sm-3  form-label"
+                          htmlFor="selNGOCategory"
+                          className="col-sm-2 col-form-label col-form-label-sm para b "
                         >
-                          <span className=" text-dark fw-semibold">
-                            Fund Donations{" "}
-                          </span>
+                          {" "}
+                          Fund Donations{" "}
+                          <small className="text-danger b">*</small>
                         </label>
-                        <div className="col-sm-8">
-                          <label
-                            htmlFor="txtNgoRequirement"
-                            className="form-label"
-                          >
-                            <span className=" text-dark fw-semibold">
+                        <div class="col-sm-8 row">
+                          <div class="col-sm-2">
+                            <label
+                              htmlFor="selNGOCategory"
+                              className=" col-form-label col-form-label-sm para b "
+                            >
                               {" "}
-                              Requirement
-                            </span>
-                          </label>
-                          &nbsp;&nbsp;&nbsp;&nbsp;
-                          <input
-                            type="range"
-                            id="txtNgoRequirement"
-                            name="txtNgoRequirement"
-                            min="0"
-                            step="5"
-                            max="5"
-                            style={{ width: "57px" }}
-                          />
-                        </div>
-                      </div>
-
-                      <div className="row mb-3">
-                        <div className="col-sm-3">&nbsp;</div>
-                        <div className="col-sm-2">
-                          <label for="txtNGOGoals" className="form-label">
-                            <span className=" text-dark fw-semibold">Goal</span>
-                          </label>
-                        </div>
-                        <div className="col-sm-2">
-                          <div className="input-group">
-                            <span className="input-group-btn">
-                              <div className="btnnca btn-default">
-                                <i className="fa fa-inr"></i>
-                              </div>
-                            </span>
-                            <input
-                              type="text"
-                              className="form-control"
-                              name="txtNGOGoals"
-                              id="txtNGOGoals"
-                            />
+                              Goals
+                            </label>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="input-group">
+                              <span class="input-group-btn">
+                                <div class="btn btn-default">
+                                  <i class="fa fa-inr"></i>
+                                </div>
+                              </span>
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="txtNGOGoals"
+                                id="txtNGOGoals"
+                              />
+                            </div>
                           </div>
                         </div>
                       </div>
 
-                      <div className="row mb-3">
-                        <div className="col-sm-3">&nbsp;</div>
-                        <div className="col-sm-2">
-                          <label for="txtNGOStartDate" className="form-label">
-                            <span className=" text-dark fw-semibold">
+                      <div class="row mb-3">
+                        <div class="col-sm-2">&nbsp;</div>
+                        <div class="col-sm-8 row">
+                          <div class="col-sm-2">
+                            <label
+                              htmlFor="txtNGOStartDate"
+                              className="col-form-label col-form-label-sm para b "
+                            >
+                              {" "}
                               Start Date
-                            </span>
-                          </label>
-                        </div>
-
-                        <div className="col-sm-2">
-                          <div className="input-group">
-                            <input
-                              type="text"
-                              className="form-control"
-                              name="txtNGOStartDate"
-                              id="txtNGOStartDate"
-                            />
-                            <span className="input-group-btn">
-                              <div className="btnnca btn-default">
-                                <i className="fa fa-calendar themeCol-pink"></i>
-                              </div>
-                            </span>
+                            </label>
                           </div>
-                        </div>
-                        <div className="col-sm-2">
-                          <label for="txtNGOEndDate" className="form-label">
-                            <span className=" text-dark fw-semibold">
-                              End Date
-                            </span>
-                          </label>
-                        </div>
+                          <div class="col-sm-4">
+                            <div class="input-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="txtNGOStartDate"
+                                id="txtNGOStartDate"
+                              />
+                              <span class="input-group-btn">
+                                <div class="btn btn-default">
+                                  <i className="fa fa-calendar themeCol-pink"></i>
+                                </div>
+                              </span>
+                            </div>
+                          </div>
 
-                        <div className="col-sm-2">
-                          <div className="input-group">
-                            <input
-                              type="text"
-                              className="form-control"
-                              name="txtNGOEndDate"
-                              id="txtNGOEndDate"
-                            />
-                            <span className="input-group-btn">
-                              <div className="btnnca btn-default">
-                                <i className="fa fa-calendar themeCol-pink"></i>
-                              </div>
-                            </span>
+                          <div class="col-sm-2">
+                            <label
+                              htmlFor="txtNGOEndDate"
+                              className="col-form-label col-form-label-sm para b "
+                            >
+                              {" "}
+                              End Date
+                            </label>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="input-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="txtNGOEndDate"
+                                id="txtNGOEndDate"
+                              />
+                              <span class="input-group-btn">
+                                <div class="btn btn-default">
+                                  <i className="fa fa-calendar themeCol-pink"></i>
+                                </div>
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
 
-                      <div className="row mb-3">
+                      {/* <div class="row mb-3">
                         <label
                           htmlFor="txtNgoShortURL"
-                          className="col-sm-3  form-label"
+                          className="col-sm-2 col-form-label col-form-label-sm para b "
                         >
-                          <span className=" text-dark fw-semibold">
-                            Short URL{" "}
-                          </span>
+                          Short URL <small className="text-danger b">*</small>
                         </label>
-                        <div className="col-sm-8">
-                          <a className="causelinks" target="_blank">
-                            <div className=" ">
+                        <div class="col-sm-8">
+                          {" "}
+                          <a class="causelinks" target="_blank">
+                            <div class="input-group">
                               <input
-                                className="btnnca btn-gold btn-sm w-75 text-start"
+                                class="btn btn-gold btn-sm w-75 text-start"
                                 type="text"
                                 id="txtNgoShortURL"
                                 name="txtNgoShortURL"
                                 readonly="true"
                                 value="doaram.com/cause/c-T090101"
                               />
-
-                              <i className="fa fa-link themeCol-pink text-end"></i>
+                              <span class="input-group-btn copyclipboard">
+                                <div class="btn btn-default">
+                                  <i class="fa fa-copy themeCol-pink "></i>
+                                </div>
+                              </span>
+                              <p className="copied text-success"></p>
                             </div>
                           </a>
                         </div>
-                      </div>
+                      </div> */}
 
-                      <div className="row mb-3">
+                      <div class="row mb-3">
                         <label
-                          htmlFor="tacause_story"
-                          className="col-sm-3  form-label"
+                          htmlFor="txtNgoCauseDesc"
+                          className="col-sm-2 col-form-label col-form-label-sm para b "
                         >
-                          <span className=" text-dark fw-semibold">
-                            Cause Story{" "}
-                          </span>
+                          Cause Description{" "}
+                          <small className="text-danger b">*</small>
                         </label>
-                        <div className="col-sm-8">
+                        <div class="col-sm-8">
                           <textarea
-                            className="form-control w-100"
-                            id="tacause_story"
-                            name="tacause_story"
+                            class="form-control w-100"
+                            id="txtNgoCauseDesc"
+                            name="txtNgoCauseDesc"
                             rows="10"
-                            placeholder="Enter your Cause Story"
+                            maxlength="250"
+                            placeholder="Enter your Cause Description (In 250 Words)"
                           ></textarea>
                         </div>
                       </div>
 
-                      <div className="row mb-3">
+                      <div class="row mb-3">
                         <label
-                          for="selNgoCountry"
-                          className="col-sm-3  form-label"
+                          htmlFor="selNgoCountry"
+                          className="col-sm-2 col-form-label col-form-label-sm para b "
                         >
-                          <span className=" text-dark fw-semibold">
-                            Location
-                          </span>
+                          Location <small className="text-danger b">*</small>
                         </label>
-                        <div className="col-sm-4">
+                        <div class="col-sm-4">
                           <select
                             name="selNgoCountry"
                             id="selNgoCountry"
-                            className="form-control w-100"
+                            class="form-control w-100  da_country"
                           >
-                            <option value="">Select Country</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option value="India" countryid="101">
+                              India
+                            </option>
                           </select>
                         </div>
-                        <div className="col-sm-4">
+                        <div class="col-sm-4">
                           <select
+                            className="form-control w-100 da_state"
                             name="selNgoState"
                             id="selNgoState"
-                            className="form-control w-100"
                           >
-                            <option>Select State</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            {" "}
+                            <option value="">Select State</option>
                           </select>
                         </div>
                       </div>
 
-                      <div className="row mb-3">
+                      <div class="row mb-3">
                         <label
                           htmlFor="selNgoCity"
-                          className="col-sm-3  form-label"
+                          class="col-sm-2  form-label"
                         >
-                          <span className=" text-dark fw-semibold">&nbsp;</span>
+                          <span class=" text-dark fw-semibold">&nbsp;</span>
                         </label>
-                        <div className="col-sm-6">
+                        <div class="col-sm-6">
                           <select
-                            className="form-control w-50"
+                            className="form-control w-100 da_cities"
                             name="selNgoCity"
                             id="selNgoCity"
                           >
                             <option value="">Select City</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
                           </select>
                         </div>
-                        <div className="col-sm-6">&nbsp;</div>
+                        <div class="col-sm-6">&nbsp;</div>
                       </div>
 
-                      <div className="row mb-3">
+                      <div class="row mb-3">
                         <label
-                          for="inputEmail3"
-                          className="col-sm-3  form-label"
+                          htmlFor="txtFldGallery1"
+                          className="col-sm-2 col-form-label col-form-label-sm para b "
                         >
-                          <span className=" text-dark fw-semibold">
-                            Gallery
-                          </span>
+                          {" "}
+                          Gallery
                         </label>
-                        <div className="col-sm-8">
-                          <div className="input-group">
-                            1.&nbsp;&nbsp;&nbsp;
+
+                        <div class="col-sm-8">
+                          <div class="input-group input-file">
+                            1. &nbsp;&nbsp;&nbsp;
                             <input
-                              type="text"
-                              name="filename"
-                              id="filename"
-                              className="form-control"
-                              placeholder="Add image 1"
+                              type="file"
+                              class="form-control"
+                              name="files"
+                              id="txtFldGallery1"
+                              placeholder="Certificate of Incorporation from ROC"
                             />
-                            <span className="input-group-btn">
-                              <div className="btnnca btn-default  custom-file-uploader">
-                                <input type="file" name="file" />
+                            <span class="input-group-btn">
+                              <label
+                                class="btn btn-default"
+                                type="button"
+                                for="txtFldGallery1"
+                              >
                                 <i className="fa fa-upload themeCol-pink"></i>
-                              </div>
-                              <div className="btnnca btn-default">
+                              </label>
+                              <label
+                                class="btn btn-default btn-reset"
+                                type="button"
+                              >
                                 <i className="fa fa-trash themeCol-pink"></i>
-                              </div>
+                              </label>
                             </span>
                           </div>
                           <div
-                            className="text-danger errors"
+                            class="text-danger errors"
                             // style="font-size: 15px;"
                           ></div>
                         </div>
                       </div>
 
-                      <div className="row mb-3">
+                      <div class="row mb-3">
                         <label
                           for="inputtext"
-                          className="col-sm-3  form-label"
+                          class="col-sm-2  form-label"
                         ></label>
-                        <div className="col-sm-8  ms-3">
-                          <input
+                        <div class="col-sm-8  ms-3">
+                          <textarea
+                            rows="5"
                             type="text"
-                            className="form-control fst-italic w-100"
+                            class="form-control fst-italic w-100"
                             id="inputtext"
-                            placeholder="Write short image one description"
-                          />
+                            placeholder="Write description about your Image (In 250 words)"
+                          ></textarea>
                         </div>
                       </div>
 
-                      <div className="row mb-3">
+                      <div class="row mb-3">
                         <label
-                          for="inputEmail3"
-                          className="col-sm-3  form-label"
+                          for="txtFldGallery2"
+                          class="col-sm-2  form-label"
                         >
-                          <span className=" text-dark fw-semibold">&nbsp;</span>
+                          <span class=" text-dark fw-semibold">&nbsp;</span>
                         </label>
-                        <div className="col-sm-8">
-                          <div className="input-group">
-                            2.&nbsp;&nbsp;&nbsp;
+                        <div class="col-sm-8">
+                          <div class="input-group input-file">
+                            2. &nbsp;&nbsp;&nbsp;
                             <input
-                              type="text"
-                              name="filename"
-                              id="filename"
-                              className="form-control"
-                              placeholder="Add image 1"
+                              type="file"
+                              class="form-control"
+                              name="files"
+                              id="txtFldGallery2"
+                              placeholder="Certificate of Incorporation from ROC"
                             />
-                            <span className="input-group-btn">
-                              <div className="btnnca btn-default  custom-file-uploader">
-                                <input type="file" name="file" />
+                            <span class="input-group-btn">
+                              <label
+                                class="btn btn-default"
+                                type="button"
+                                for="txtFldGallery2"
+                              >
                                 <i className="fa fa-upload themeCol-pink"></i>
-                              </div>
-                              <div className="btnnca btn-default">
+                              </label>
+                              <label
+                                class="btn btn-default btn-reset"
+                                type="button"
+                              >
                                 <i className="fa fa-trash themeCol-pink"></i>
-                              </div>
+                              </label>
                             </span>
                           </div>
                           <div
-                            className="text-danger errors"
+                            class="text-danger errors"
                             // style="font-size: 15px;"
                           ></div>
                         </div>
                       </div>
 
-                      <div className="row mb-3">
+                      <div class="row mb-3">
                         <label
                           for="inputtext"
-                          className="col-sm-3  form-label"
+                          class="col-sm-2  form-label"
                         ></label>
-                        <div className="col-sm-8  ms-3">
-                          <input
+                        <div class="col-sm-8  ms-3">
+                          <textarea
+                            rows="5"
                             type="text"
-                            className="form-control fst-italic w-100"
+                            class="form-control fst-italic w-100"
                             id="inputtext"
-                            placeholder="Write short image one description"
-                          />
+                            placeholder="Write description about your Image (In 250 words)"
+                          ></textarea>
                         </div>
                       </div>
 
-                      <div className="row mb-3">
+                      <div class="row mb-3">
                         <label
-                          for="inputEmail3"
-                          className="col-sm-3  form-label"
+                          for="txtFldSuppDoc1"
+                          className="col-sm-2 col-form-label col-form-label-sm para b "
                         >
-                          <span className=" text-dark fw-semibold">&nbsp;</span>
+                          Supportive Documents
                         </label>
-                        <div className="col-sm-8">
-                          <div className="input-group">
-                            3.&nbsp;&nbsp;&nbsp;
+                        <div class="col-sm-8">
+                          <div class="input-group input-file">
+                            1. &nbsp;&nbsp;&nbsp;
                             <input
-                              type="text"
-                              name="filename"
-                              id="filename"
-                              className="form-control"
-                              placeholder="Add image 1"
+                              type="file"
+                              class="form-control"
+                              name="files"
+                              id="txtFldSuppDoc1"
+                              placeholder="Certificate of Incorporation from ROC"
                             />
-                            <span className="input-group-btn">
-                              <div className="btnnca btn-default  custom-file-uploader">
-                                <input type="file" name="file" />
+                            <span class="input-group-btn">
+                              <label
+                                class="btn btn-default"
+                                type="button"
+                                for="txtFldSuppDoc1"
+                              >
                                 <i className="fa fa-upload themeCol-pink"></i>
-                              </div>
-                              <div className="btnnca btn-default">
+                              </label>
+                              <label
+                                class="btn btn-default btn-reset"
+                                type="button"
+                              >
                                 <i className="fa fa-trash themeCol-pink"></i>
-                              </div>
+                              </label>
                             </span>
                           </div>
                           <div
-                            className="text-danger errors"
+                            class="text-danger errors"
                             // style="font-size: 15px;"
                           ></div>
                         </div>
                       </div>
 
-                      <div className="row mb-3">
+                      <div class="row mb-3">
                         <label
                           for="inputtext"
-                          className="col-sm-3  form-label"
+                          class="col-sm-2  form-label"
                         ></label>
-                        <div className="col-sm-8  ms-3">
-                          <input
+                        <div class="col-sm-8  ms-3">
+                          <div class="input-group">
+                            <textarea
+                              rows="5"
+                              type="text"
+                              class="form-control fst-italic w-100"
+                              id="inputtext"
+                              placeholder="Write description about your supportive documents (In 250 words)"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label
+                          for="txtFldSuppDoc2"
+                          class="col-sm-2  form-label"
+                        >
+                          <span class=" text-dark fw-semibold">&nbsp;</span>
+                        </label>
+                        <div class="col-sm-8">
+                          <div class="input-group input-file">
+                            2. &nbsp;&nbsp;&nbsp;
+                            <input
+                              type="file"
+                              class="form-control"
+                              name="files"
+                              id="txtFldSuppDoc2"
+                              placeholder="Certificate of Incorporation from ROC"
+                            />
+                            <span class="input-group-btn">
+                              <label
+                                class="btn btn-default"
+                                type="button"
+                                for="txtFldSuppDoc2"
+                              >
+                                <i className="fa fa-upload themeCol-pink"></i>
+                              </label>
+                              <label
+                                class="btn btn-default btn-reset"
+                                type="button"
+                              >
+                                <i className="fa fa-trash themeCol-pink"></i>
+                              </label>
+                            </span>
+                          </div>
+                          <div
+                            class="text-danger errors"
+                            // style="font-size: 15px;"
+                          ></div>
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label
+                          for="inputtext"
+                          class="col-sm-2  form-label"
+                        ></label>
+                        <div class="col-sm-8  ms-3">
+                          <textarea
+                            rows="5"
                             type="text"
-                            className="form-control fst-italic w-100"
+                            class="form-control fst-italic w-100"
                             id="inputtext"
-                            placeholder="Write short image one description"
-                          />
+                            placeholder="Write description about your supportive documents (In 250 words)"
+                          ></textarea>
                         </div>
                       </div>
 
-                      <div className="row mb-5">
-                        <div className="mb-3 row">
-                          <label
-                            htmlFor="input"
-                            className="col-sm-3  form-label"
-                          ></label>
-                          <div className="col-sm-4  ms-3">
-                            <button
-                              type="button"
-                              className="btnnca btn-outline-secondary btn-sm"
-                            >
-                              {" "}
-                              <i className="fa fa-plus-circle"></i>&nbsp;Add New
-                            </button>
-                          </div>
-                          <div className="col-sm-4"></div>
-                        </div>
-                      </div>
-
-                      <div className="row mb-3">
+                      {/* <div class="row mb-3">
                         <label
-                          for="inputEmail3"
-                          className="col-sm-3  form-label"
+                          htmlFor="txtNgoCauseStatus"
+                          class="col-sm-2  form-label"
                         >
-                          <span className=" text-dark fw-semibold">
-                            Supportive Documents
-                          </span>
+                          <span class=" text-dark fw-semibold">Status </span>
                         </label>
-                        <div className="col-sm-8">
-                          <div className="input-group">
-                            1.&nbsp;&nbsp;&nbsp;
-                            <input
-                              type="text"
-                              name="filename"
-                              id="filename"
-                              className="form-control"
-                              placeholder="Add image 1"
-                            />
-                            <span className="input-group-btn">
-                              <div className="btnnca btn-default  custom-file-uploader">
-                                <input type="file" name="file" />
-                                <i className="fa fa-upload themeCol-pink"></i>
-                              </div>
-                              <div className="btnnca btn-default">
-                                <i className="fa fa-trash themeCol-pink"></i>
-                              </div>
-                            </span>
-                          </div>
-                          <div
-                            className="text-danger errors"
-                            // style="font-size: 15px;"
-                          ></div>
-                        </div>
-                      </div>
-
-                      <div className="row mb-3">
-                        <label
-                          for="inputtext"
-                          className="col-sm-3  form-label"
-                        ></label>
-                        <div className="col-sm-8  ms-3">
-                          <div className="input-group">
-                            <input
-                              type="text"
-                              className="form-control fst-italic "
-                              id="inputtext"
-                              placeholder="Write short image one description"
-                            />
-                            <span className="input-group-btn">
-                              <div className="btnnca btn-default">
-                                <i className="fa fa-pencil-square-o  themeCol-pink"></i>
-                              </div>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="row mb-3">
-                        <label
-                          for="inputEmail3"
-                          className="col-sm-3  form-label"
-                        >
-                          <span className=" text-dark fw-semibold">&nbsp;</span>
-                        </label>
-                        <div className="col-sm-8">
-                          <div className="input-group">
-                            2.&nbsp;&nbsp;&nbsp;
-                            <input
-                              type="text"
-                              name="filename"
-                              id="filename"
-                              className="form-control"
-                              placeholder="Add image 1"
-                            />
-                            <span className="input-group-btn">
-                              <div className="btnnca btn-default  custom-file-uploader">
-                                <input type="file" name="file" />
-                                <i className="fa fa-upload themeCol-pink"></i>
-                              </div>
-                              <div className="btnnca btn-default">
-                                <i className="fa fa-trash themeCol-pink"></i>
-                              </div>
-                            </span>
-                          </div>
-                          <div
-                            className="text-danger errors"
-                            // style="font-size: 15px;"
-                          ></div>
-                        </div>
-                      </div>
-
-                      <div className="row mb-3">
-                        <label
-                          for="inputtext"
-                          className="col-sm-3  form-label"
-                        ></label>
-                        <div className="col-sm-8  ms-3">
-                          <div className="input-group">
-                            <input
-                              type="text"
-                              className="form-control fst-italic "
-                              id="inputtext"
-                              placeholder="Write short image one description"
-                            />
-                            <span className="input-group-btn">
-                              <div className="btnnca btn-default">
-                                <i className="fa fa-pencil-square-o  themeCol-pink"></i>
-                              </div>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="row mb-3">
-                        <label
-                          for="inputEmail3"
-                          className="col-sm-3  form-label"
-                        >
-                          <span className=" text-dark fw-semibold">&nbsp;</span>
-                        </label>
-                        <div className="col-sm-8">
-                          <div className="input-group">
-                            3.&nbsp;&nbsp;&nbsp;
-                            <input
-                              type="text"
-                              name="filename"
-                              id="filename"
-                              className="form-control"
-                              placeholder="Add image 1"
-                            />
-                            <span className="input-group-btn">
-                              <div className="btnnca btn-default  custom-file-uploader">
-                                <input type="file" name="file" />
-                                <i className="fa fa-upload themeCol-pink"></i>
-                              </div>
-                              <div className="btnnca btn-default">
-                                <i className="fa fa-trash themeCol-pink"></i>
-                              </div>
-                            </span>
-                          </div>
-                          <div
-                            className="text-danger errors"
-                            // style="font-size: 15px;"
-                          ></div>
-                        </div>
-                      </div>
-                      <div className="row mb-3">
-                        <label
-                          for="inputtext"
-                          className="col-sm-3  form-label"
-                        ></label>
-                        <div className="col-sm-8  ms-3">
-                          <div className="input-group">
-                            <input
-                              type="text"
-                              className="form-control fst-italic "
-                              id="inputtext"
-                              placeholder="Write short image one description"
-                            />
-                            <span className="input-group-btn">
-                              <div className="btnnca btn-default">
-                                <i className="fa fa-pencil-square-o  themeCol-pink"></i>
-                              </div>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="row mb-5">
-                        <div className="mb-3 row">
-                          <label
-                            htmlFor="input"
-                            className="col-sm-3  form-label"
-                          ></label>
-                          <div className="col-sm-4  ms-3">
-                            <button
-                              type="button"
-                              className="btnnca btn-outline-secondary btn-sm"
-                            >
-                              {" "}
-                              <i className="fa fa-plus-circle"></i>&nbsp;Add New
-                            </button>
-                          </div>
-                          <div className="col-sm-4"></div>
-                        </div>
-                      </div>
-
-                      <div className="row mb-3">
-                        <label
-                          htmlFor="txtNgoShortURL"
-                          className="col-sm-3  form-label"
-                        >
-                          <span className=" text-dark fw-semibold">
-                            Status{" "}
-                          </span>
-                        </label>
-                        <div className="col-sm-8">
-                          <select className="form-control">
+                        <div class="col-sm-8">
+                          <select name="txtNgoCauseStatus" id="txtNgoCauseStatus" class="form-control">
+                          <option value="Under Review">Under Review</option>
                             <option value="Active">Active</option>
                             <option value="InActive">InActive</option>
                           </select>
                         </div>
-                      </div>
+                      </div> */}
 
-                      <div className="row mb-5">
-                        <div className="col-md-5"></div>
-                        <div className="col-md-3">
+                      <div class="row mb-5">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-3">
                           <button
                             type="button"
                             name="SubmitDetail"
                             id="SubmitDetail"
-                            className="btnnca btn-gold btn-sm   "
+                            class="btn btn-gold btn-sm   "
                             // onClick={this.CauseSubmit}
                           >
-                            <span
-                              className="me-2"
-                              style={{ fontSize: "14px" }}
-                            ></span>
-                            Update Cause
+                            <i class="fa fa-pencil-square-o"></i> Submit for
+                            review
                           </button>
                         </div>
-                        <div className="col-md-5"></div>
+                        <div class="col-md-5"></div>
                       </div>
                     </form>
                   </div>
                 </div>
                 <div
-                  className="tab-pane fade"
+                  class="tab-pane fade"
                   id="nav-causedonations"
                   role="tabpanel"
                   aria-labelledby="nav-causedonations-tab"
                 >
-                  <div className=" row col-md-12 mt-5">
+                  <div class=" row col-md-12 mt-5">
                     {" "}
-                    <div className="col">
+                    <div class="col">
                       <div className="table-responsive">
                         <table
                           id="cause_DonationTable"
-                          className="dataTable table-bordered table-striped display hover"
+                          class="dataTable table-bordered table-striped display hover"
                           style={{ width: "100%" }}
                         >
                           <thead>
@@ -846,24 +702,23 @@ function CauseDetails(props) {
                               <td>Company #21</td>
                               <td>16-01-2023</td>
                               <td>
-                                <i className="fa fa-inr"></i>&nbsp;2,000
+                                <i class="fa fa-inr"></i>&nbsp;2,000
                               </td>
                               <td>
                                 <input type="file" />
                               </td>
-                              <td className="text-warning">
-                                <i className="fa fa-times"></i>&nbsp; Upload
-                                Pending
+                              <td class="text-warning">
+                                <i class="fa fa-times"></i>&nbsp; Upload Pending
                               </td>
                               <td>
-                                <span className="btnnca btn-danger btn-sm">
-                                  <i className="fas fa-trash-alt"></i>
+                                <span class="btn btn-danger btn-sm">
+                                  <i class="fas fa-trash-alt"></i>
                                 </span>
-                                <span className="btnnca btn-warning btn-sm">
-                                  <i className="fas fa-upload"></i>
+                                <span class="btn btn-warning btn-sm">
+                                  <i class="fas fa-upload"></i>
                                 </span>
-                                <span className="btnnca btn-info btn-sm">
-                                  <i className="fas fa-external-link-alt"></i>
+                                <span class="btn btn-info btn-sm">
+                                  <i class="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
                             </tr>
@@ -872,24 +727,23 @@ function CauseDetails(props) {
                               <td>Company #22</td>
                               <td>17-01-2023</td>
                               <td>
-                                <i className="fa fa-inr"></i>&nbsp;8,000
+                                <i class="fa fa-inr"></i>&nbsp;8,000
                               </td>
                               <td>
                                 <input type="file" />
                               </td>
-                              <td className="text-warning">
-                                <i className="fa fa-times"></i>&nbsp; Upload
-                                Pending
+                              <td class="text-warning">
+                                <i class="fa fa-times"></i>&nbsp; Upload Pending
                               </td>
                               <td>
-                                <span className="btnnca btn-danger btn-sm">
-                                  <i className="fas fa-trash-alt"></i>
+                                <span class="btn btn-danger btn-sm">
+                                  <i class="fas fa-trash-alt"></i>
                                 </span>
-                                <span className="btnnca btn-warning btn-sm">
-                                  <i className="fas fa-upload"></i>
+                                <span class="btn btn-warning btn-sm">
+                                  <i class="fas fa-upload"></i>
                                 </span>
-                                <span className="btnnca btn-info btn-sm">
-                                  <i className="fas fa-external-link-alt"></i>
+                                <span class="btn btn-info btn-sm">
+                                  <i class="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
                             </tr>
@@ -898,24 +752,23 @@ function CauseDetails(props) {
                               <td>Company #23</td>
                               <td>19-01-2023</td>
                               <td>
-                                <i className="fa fa-inr"></i>&nbsp;1,000
+                                <i class="fa fa-inr"></i>&nbsp;1,000
                               </td>
                               <td>
                                 <input type="file" />
                               </td>
-                              <td className="text-warning">
-                                <i className="fa fa-times"></i>&nbsp; Upload
-                                Pending
+                              <td class="text-warning">
+                                <i class="fa fa-times"></i>&nbsp; Upload Pending
                               </td>
                               <td>
-                                <span className="btnnca btn-danger btn-sm">
-                                  <i className="fas fa-trash-alt"></i>
+                                <span class="btn btn-danger btn-sm">
+                                  <i class="fas fa-trash-alt"></i>
                                 </span>
-                                <span className="btnnca btn-warning btn-sm">
-                                  <i className="fas fa-upload"></i>
+                                <span class="btn btn-warning btn-sm">
+                                  <i class="fas fa-upload"></i>
                                 </span>
-                                <span className="btnnca btn-info btn-sm">
-                                  <i className="fas fa-external-link-alt"></i>
+                                <span class="btn btn-info btn-sm">
+                                  <i class="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
                             </tr>
@@ -924,24 +777,23 @@ function CauseDetails(props) {
                               <td>Company #24</td>
                               <td>21-01-2023</td>
                               <td>
-                                <i className="fa fa-inr"></i>&nbsp;9,000
+                                <i class="fa fa-inr"></i>&nbsp;9,000
                               </td>
                               <td>
                                 <input type="file" />
                               </td>
-                              <td className="text-warning">
-                                <i className="fa fa-times"></i>&nbsp; Upload
-                                Pending
+                              <td class="text-warning">
+                                <i class="fa fa-times"></i>&nbsp; Upload Pending
                               </td>
                               <td>
-                                <span className="btnnca btn-danger btn-sm">
-                                  <i className="fas fa-trash-alt"></i>
+                                <span class="btn btn-danger btn-sm">
+                                  <i class="fas fa-trash-alt"></i>
                                 </span>
-                                <span className="btnnca btn-warning btn-sm">
-                                  <i className="fas fa-upload"></i>
+                                <span class="btn btn-warning btn-sm">
+                                  <i class="fas fa-upload"></i>
                                 </span>
-                                <span className="btnnca btn-info btn-sm">
-                                  <i className="fas fa-external-link-alt"></i>
+                                <span class="btn btn-info btn-sm">
+                                  <i class="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
                             </tr>
@@ -950,24 +802,23 @@ function CauseDetails(props) {
                               <td>Company #25</td>
                               <td>24-01-2023</td>
                               <td>
-                                <i className="fa fa-inr"></i>&nbsp;12,000
+                                <i class="fa fa-inr"></i>&nbsp;12,000
                               </td>
                               <td>
                                 <input type="file" />
                               </td>
-                              <td className="text-warning">
-                                <i className="fa fa-times"></i>&nbsp; Upload
-                                Pending
+                              <td class="text-warning">
+                                <i class="fa fa-times"></i>&nbsp; Upload Pending
                               </td>
                               <td>
-                                <span className="btnnca btn-danger btn-sm">
-                                  <i className="fas fa-trash-alt"></i>
+                                <span class="btn btn-danger btn-sm">
+                                  <i class="fas fa-trash-alt"></i>
                                 </span>
-                                <span className="btnnca btn-warning btn-sm">
-                                  <i className="fas fa-upload"></i>
+                                <span class="btn btn-warning btn-sm">
+                                  <i class="fas fa-upload"></i>
                                 </span>
-                                <span className="btnnca btn-info btn-sm">
-                                  <i className="fas fa-external-link-alt"></i>
+                                <span class="btn btn-info btn-sm">
+                                  <i class="fas fa-external-link-alt"></i>
                                 </span>
                               </td>
                             </tr>
@@ -979,65 +830,61 @@ function CauseDetails(props) {
                 </div>
 
                 <div
-                  className="tab-pane fade"
+                  class="tab-pane fade"
                   id="nav-causehistory"
                   role="tabpanel"
                   aria-labelledby="nav-causehistory-tab"
                 >
-                  <div className=" row col-md-12 mt-5">
+                  <div class=" row col-md-12 mt-5">
                     {" "}
-                    <div className="col">
-                      <div className="card cardnca p-1 mb-0">
-                        <div className=" col-md-12  ">
-                          <div className="row">
-                            <div className="ms-2 col-md-4 c-details">
-                              <h6 className="mb-0 font12 text-dark b">
-                                Version 1
-                              </h6>
-                              <span className="mb-0 font12 text-secondary">
+                    <div class="col">
+                      <div class="card p-1 mb-0">
+                        <div class=" col-md-12  ">
+                          <div class="row">
+                            <div class="ms-2 col-md-4 c-details">
+                              <h6 class="mb-0 font12 text-dark b">Version 1</h6>
+                              <span class="mb-0 font12 text-secondary">
                                 12-12-2021
                               </span>
                             </div>
-                            <div className="icon col-md-6 text-end pt-3">
-                              <div className="badge">
+                            <div class="icon col-md-6  pt-3">
+                              <div class="badge">
                                 {" "}
-                                <span className="font10 text-dark">
-                                  <i className="fa fa-check-circle text-success"></i>
+                                <span class="font10 text-dark">
+                                  <i class="fa fa-check-circle text-success"></i>
                                   &nbsp; Verified
                                 </span>{" "}
                               </div>
                               <button
-                                className="btnnca btn-white causelinks
+                                class="btn btn-white causelinks
  "
                               >
-                                <i className="externallinkIcon"></i>
+                                <i class="externallinkIcon"></i>
                               </button>{" "}
                             </div>
                           </div>
                         </div>
-                        <div className="ps-3 px-3">
-                          <h6 className="category b">Details</h6>
-                          <div className="row ps-3">
-                            <table className="table table-sm table-borderedless border-0 causehis">
+                        <div class="ps-3 px-3">
+                          <h6 class="category b">Details</h6>
+                          <div class="row ps-3">
+                            <table class="table table-sm table-borderedless border-0 causehis">
                               <thead>
-                                <tr className=" border-0">
-                                  <th className=" border-0">Date of Posting</th>
-                                  <th className=" border-0">
-                                    Date of Approval
-                                  </th>
-                                  <th className=" border-0">
+                                <tr class=" border-0">
+                                  <th class=" border-0">Date of Posting</th>
+                                  <th class=" border-0">Date of Approval</th>
+                                  <th class=" border-0">
                                     Approved By (DoAram)
                                   </th>
-                                  <th className=" border-0">Amount</th>
+                                  <th class=" border-0">Amount</th>
                                 </tr>
                               </thead>
                               <tbody>
-                                <tr className=" border-0">
-                                  <td className="para border-0">18-01-2023</td>
-                                  <td className="para border-0">18-01-2023</td>
-                                  <td className="para border-0">Mr.xyz abc</td>
-                                  <td className="para border-0">
-                                    <i className="fa fa-inr"></i>&nbsp; 50,000
+                                <tr class=" border-0">
+                                  <td class="para border-0">18-01-2023</td>
+                                  <td class="para border-0">18-01-2023</td>
+                                  <td class="para border-0">Mr.xyz abc</td>
+                                  <td class="para border-0">
+                                    <i class="fa fa-inr"></i>&nbsp; 50,000
                                   </td>
                                 </tr>
                               </tbody>
@@ -1047,60 +894,56 @@ function CauseDetails(props) {
                       </div>
                     </div>
                   </div>
-                  <div className=" row col-md-12 mt-5">
+                  <div class=" row col-md-12 mt-5">
                     {" "}
-                    <div className="col">
-                      <div className="card cardnca p-1 mb-0">
-                        <div className=" col-md-12  ">
-                          <div className="row">
-                            <div className="ms-2 col-md-4 c-details">
-                              <h6 className="mb-0 font12 text-dark b">
-                                Version 2
-                              </h6>
-                              <span className="mb-0 font12 text-secondary">
+                    <div class="col">
+                      <div class="card p-1 mb-0">
+                        <div class=" col-md-12  ">
+                          <div class="row">
+                            <div class="ms-2 col-md-4 c-details">
+                              <h6 class="mb-0 font12 text-dark b">Version 2</h6>
+                              <span class="mb-0 font12 text-secondary">
                                 12-12-2021
                               </span>
                             </div>
-                            <div className="icon col-md-6 text-end pt-3">
-                              <div className="badge">
+                            <div class="icon col-md-6  pt-3">
+                              <div class="badge">
                                 {" "}
-                                <span className="font10 text-dark">
-                                  <i className="fa fa-check-circle text-success"></i>
+                                <span class="font10 text-dark">
+                                  <i class="fa fa-check-circle text-success"></i>
                                   &nbsp; Verified
                                 </span>{" "}
                               </div>
                               <button
-                                className="btnnca btn-white causelinks
+                                class="btn btn-white causelinks
  "
                               >
-                                <i className="externallinkIcon  "></i>
+                                <i class="externallinkIcon  "></i>
                               </button>{" "}
                             </div>
                           </div>
                         </div>
-                        <div className="ps-3 px-3">
-                          <h6 className="category b">Details</h6>
-                          <div className="row ps-3">
-                            <table className="table table-sm table-borderedless border-0  causehis">
+                        <div class="ps-3 px-3">
+                          <h6 class="category b">Details</h6>
+                          <div class="row ps-3">
+                            <table class="table table-sm table-borderedless border-0  causehis">
                               <thead>
-                                <tr className=" border-0">
-                                  <th className=" border-0">Date of Posting</th>
-                                  <th className=" border-0">
-                                    Date of Approval
-                                  </th>
-                                  <th className=" border-0">
+                                <tr class=" border-0">
+                                  <th class=" border-0">Date of Posting</th>
+                                  <th class=" border-0">Date of Approval</th>
+                                  <th class=" border-0">
                                     Approved By (DoAram)
                                   </th>
-                                  <th className=" border-0">Amount</th>
+                                  <th class=" border-0">Amount</th>
                                 </tr>
                               </thead>
                               <tbody>
-                                <tr className=" border-0">
-                                  <td className="para border-0">18-01-2023</td>
-                                  <td className="para border-0">18-01-2023</td>
-                                  <td className="para border-0">Mr.xyz abc</td>
-                                  <td className="para border-0">
-                                    <i className="fa fa-inr"></i>&nbsp; 50,000
+                                <tr class=" border-0">
+                                  <td class="para border-0">18-01-2023</td>
+                                  <td class="para border-0">18-01-2023</td>
+                                  <td class="para border-0">Mr.xyz abc</td>
+                                  <td class="para border-0">
+                                    <i class="fa fa-inr"></i>&nbsp; 50,000
                                   </td>
                                 </tr>
                               </tbody>
@@ -1118,19 +961,16 @@ function CauseDetails(props) {
           </div>
         </section>
 
-        <div className="row"></div>
+        <div class="row"></div>
 
-        <aside className="control-sidebar control-sidebar-dark asidefixed">
-          <div
-            className="container mt-5"
-            style={{ height: "600px !important" }}
-          >
-            <div className="row">
-              <div className=" mb-3 control-sidebar-dark">
-                <div className="card-body">
-                  <h5 className="text-light mb-3">Performance</h5>
+        <aside class="control-sidebar control-sidebar-dark asidefixed">
+          <div class="container mt-5" style={{ height: "600px !important" }}>
+            <div class="row">
+              <div class=" mb-3 control-sidebar-dark">
+                <div class="card-body">
+                  <h5 class="text-light mb-3">Performance</h5>
 
-                  <table className="table table-sm">
+                  <table class="table table-sm">
                     <tbody>
                       <tr>
                         <th>Number of Donations</th>
@@ -1160,7 +1000,7 @@ function CauseDetails(props) {
                       <tr>
                         <th>Cause Category</th>
                         <td>
-                          <button type="button" className="btnnca btn-info btn-sm">
+                          <button type="button" class="btn btn-info btn-sm">
                             Children
                           </button>
                         </td>
@@ -1169,12 +1009,8 @@ function CauseDetails(props) {
                       <tr>
                         <th>DoAram Verification Status</th>
                         <td>
-                          <button
-                            type="button"
-                            className="btnnca btn-light btn-sm"
-                          >
-                            <i className="fa fa-pencil-square-o"></i>
-                            &nbsp;Verified
+                          <button type="button" class="btn btn-light btn-sm">
+                            <i class="fa fa-pencil-square-o"></i>&nbsp;Verified
                           </button>
                         </td>
                       </tr>
