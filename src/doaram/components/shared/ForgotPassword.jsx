@@ -4,12 +4,12 @@ import { NavLink } from "react-router-dom";
 
 function ForgotPassword() {
   return (
-    <div>
-      <div className="col-md-12 row fontfamilynca">
+    <>
+      <div className="col-md-12 row ">
         <div className="d-flex  justify-content-center">
           <div className="row col-md-6 mt-2 ">
-            <div className="card cardnca pt-2">
-              <NavLink to="/" className="nav-link text-end mb-3">
+            <div className="card pt-2">
+              <NavLink to="/ngosignin" className="nav-link text-end mb-3">
                 <button className="btnnca btn-info btn-sm  " type="button">
                   <i className="fa fa-arrow-left"></i> Back To Login
                 </button>
@@ -33,94 +33,64 @@ function ForgotPassword() {
                 <p className="font16 text-danger b" id=" invDetailsmessage"></p>
 
                 <fieldset>
-                  <div className="form-card" style={{ minHeight: "60vh" }}>
-                    <div className="row p-3">
-                      <div className="col-10">
-                        <h6 className="text-start">Enter Your Email Address</h6>
+                  <div class="form-card" style={{ minHeight: "60vh" }}>
+                    <div class="row p-3">
+                      <div class="col-10">
+                        <h6 class="text-start">NGO Authorized Email Id</h6>
                       </div>
-                      <div className="col-2">
-                        <h2 className="steps">Step 1 - 3</h2>
+                      <div class="col-2">
+                        <h2 class="steps">Step 1 - 3</h2>
                       </div>
                     </div>
 
-                    <div className="container mt-3 mb-3 text-start">
+                    <div class="container mt-3 mb-3 text-start">
                       <input
                         type="text"
-                        className="form-control w-100"
+                        class="form-control w-100"
                         id="txtFldNGOName"
                         name="txtFldNGOName"
-                        placeholder="Enter Your Email Address"
+                        placeholder="Enter Your Email Id"
                         maxlength="150"
                       />
                       <div
                         className="text-danger errors"
                         style={{ fontSize: 15 }}
-                      ></div>
+                      >
+                        {/* {this.state.errors.permantPANNo} */}
+                      </div>
                     </div>
                   </div>
                   &nbsp;&nbsp;
                   <button
                     type="button"
                     name="next"
-                    className="next btnnca btn-gold btn-sm "
+                    class="next btnnca btn-gold btn-sm "
+                    // onClick={this.validate}
                   >
-                    Next <i className="fa fa-arrow-right"></i>
+                    Verify Now <i className="fa fa-arrow-right"></i>
                   </button>
                 </fieldset>
 
                 <fieldset>
-                  <div className="form-card" style={{ minHeight: "60vh" }}>
-                    <div className="row p-3">
-                      <div className="col-10">
-                        <h6 className="text-start b">
-                          Enter the Four digit code send to your Email Address
-                        </h6>
-                      </div>
-                      <div className="col-2">
-                        <h2 className="steps">Step 2 - 3</h2>
+                  <div class="form-card" style={{ minHeight: "60vh" }}>
+                    <div class="row p-3">
+                      <div class="text-end">
+                        <h2 class="steps">Step 2 - 3</h2>
                       </div>
                     </div>
-
-                    <div className="container mt-3 mb-3 text-start">
-                      <div
-                        id="otp"
-                        className="otpnumber d-flex flex-row justify-content-center mt-2"
-                      >
-                        <input
-                          className="m-2 text-center form-control rounded"
-                          type="text"
-                          id="first"
-                          maxlength="1"
-                        />
-                        <input
-                          className="m-2 text-center form-control rounded"
-                          type="text"
-                          id="second"
-                          maxlength="1"
-                        />
-                        <input
-                          className="m-2 text-center form-control rounded"
-                          type="text"
-                          id="third"
-                          maxlength="1"
-                        />
-                        <input
-                          className="m-2 text-center form-control rounded"
-                          type="text"
-                          id="fourth"
-                          maxlength="1"
-                        />
+                    <div class="row">
+                      <div class="col">
+                        <h6 class="text-center b">
+                          Your verification link has been sent to your
+                          registered Email Id
+                        </h6>
                       </div>
-                      <div
-                        className="text-danger errors"
-                        style={{ fontSize: 15 }}
-                      ></div>
                     </div>
                   </div>
                   <button
                     type="button"
                     name="previous"
-                    className="previous btnnca btn-outline-secondary btn-sm "
+                    class="previous btnnca btn-outline-secondary btn-sm "
                     value="Previous"
                   >
                     {" "}
@@ -131,24 +101,25 @@ function ForgotPassword() {
                   <button
                     type="button"
                     name="next"
-                    className="next btnnca btn-gold btn-sm "
+                    class="next btnnca btn-gold btn-sm "
+                    // onClick={this.validate}
                   >
                     Next <i className="fa fa-arrow-right"></i>
                   </button>
                   &nbsp;&nbsp;
                 </fieldset>
                 <fieldset>
-                  <div className="form-card" style={{ minHeight: "60vh" }}>
-                    <div className="row p-3">
-                      <div className="col-10">
-                        <h6 className="text-start b">Enter Your New Password</h6>
+                  <div class="form-card" style={{ minHeight: "60vh" }}>
+                    <div class="row p-3">
+                      <div class="col-10">
+                        <h6 class="text-start b">Enter Your New Password</h6>
                       </div>
-                      <div className="col-2">
-                        <h2 className="steps">Step 3 - 3</h2>
+                      <div class="col-2">
+                        <h2 class="steps">Step 3 - 3</h2>
                       </div>
                     </div>
 
-                    <div className="container mt-3 mb-3 text-start">
+                    <div class="container mt-3 mb-3 text-start">
                       <label
                         style={{ textAlign: "left" }}
                         className="para text-start b"
@@ -157,20 +128,41 @@ function ForgotPassword() {
                         Enter New Password
                       </label>
 
-                      <div className="input-group mb-3">
+                      <div class="input-group mb-3">
                         <input
+                          // type={
+                          //   this.state.txtfldnewpassword ? "text" : "password"
+                          // }
                           className="form-control"
                           id="txtfldnewpassword"
                           name="txtfldnewpassword"
+                          // onChange={this.handleLogChange}
                           placeholder="*************"
                         />
-                        <span className="input-group-text" id="basic-addon2"></span>
+                        <span
+                          class="input-group-text"
+                          id="basic-addon2"
+                          // onClick={this.togglePasswordVisibility}
+                        >
+                          <i
+                            // className={
+                            //   "fa " +
+                            //   (this.state.txtfldnewpassword
+                            //     ? "fa-eye"
+                            //     : "fa-eye-slash") +
+                            //   " themeCol-orange"
+                            // }
+                            aria-hidden="true"
+                          ></i>
+                        </span>
                       </div>
 
                       <div
                         className="text-danger errors"
                         style={{ fontSize: 15 }}
-                      ></div>
+                      >
+                        {/* {this.state.errors.permantPANNo} */}
+                      </div>
 
                       <label
                         style={{ textAlign: "left" }}
@@ -179,31 +171,50 @@ function ForgotPassword() {
                       >
                         Confirm Password
                       </label>
-                      <div className="input-group mb-3">
+                      <div class="input-group mb-3">
                         <input
+                          // type={
+                          //   this.state.txtfldconfpassword ? "text" : "password"
+                          // }
                           className="form-control"
                           id="txtfldconfpassword"
                           name="txtfldconfpassword"
+                          // value={this.state.input.txtfldconfpassword}
+                          // onChange={this.handleLogChange}
                           placeholder="*************"
                         />
-                        <div className="input-group-append">
+                        <div class="input-group-append">
                           <span
-                            className="input-group-text"
+                            class="input-group-text"
                             id="basic-addon2"
-                          ></span>
+                            // onClick={this.toggleconPasswordVisibility}
+                          >
+                            <i
+                              // className={
+                              //   "fa " +
+                              //   (this.state.txtfldconfpassword
+                              //     ? "fa-eye"
+                              //     : "fa-eye-slash") +
+                              //   " themeCol-orange"
+                              // }
+                              aria-hidden="true"
+                            ></i>
+                          </span>
                         </div>
                       </div>
 
                       <div
                         className="text-danger errors"
                         style={{ fontSize: 15 }}
-                      ></div>
+                      >
+                        {/* {this.state.errors.permantPANNo} */}
+                      </div>
                     </div>
                   </div>
                   <button
                     type="button"
                     name="previous"
-                    className="previous btnnca btn-outline-secondary btn-sm "
+                    class="previous btnnca btn-outline-secondary btn-sm "
                     value="Previous"
                   >
                     {" "}
@@ -211,29 +222,39 @@ function ForgotPassword() {
                     &nbsp; Previous
                   </button>
                   &nbsp;&nbsp;
+                  {/* <a href="/NGODashboard"> */}
                   <button
                     type="button"
                     name="SubmitDetail"
                     id="SubmitDetail"
-                    className="next btnnca btn-gold btn-sm "
+                    class="next btnnca btn-gold btn-sm "
+                    // onClick={this.finalSubmit}
                   >
                     Submit <i className="fa fa-arrow-right"></i>
                   </button>
+                  {/* </a> */}
                   &nbsp;&nbsp;
+                  {/* <input
+                      type="button"
+                      name="next"
+                      class="next  btnnca btn-dark btn-sm"
+                      value="Submit"
+                      // onClick={this.saveInvestorInfo}
+                    /> */}
                 </fieldset>
 
                 <fieldset>
-                  <div className="form-card" style={{ minHeight: "60vh" }}>
-                    <div className="row">
-                      <div className="col">
-                        <h6 className="text-center b">
+                  <div class="form-card" style={{ minHeight: "60vh" }}>
+                    <div class="row">
+                      <div class="col">
+                        <h6 class="text-center b">
                           Your Password has been successfully changed!!!
                         </h6>
                       </div>
                     </div>
-                    <div className="row">
-                      <div className="text-center b">
-                        <NavLink to="/signin" className="btnnca btn-gold btn-sm">
+                    <div class="row">
+                      <div class="text-center b">
+                        <NavLink to="/ngosignin" class="btnnca btn-gold btn-sm">
                           Login Now
                         </NavLink>
                       </div>
@@ -245,7 +266,7 @@ function ForgotPassword() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -1138,16 +1138,16 @@
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
-  scrollbar-width: auto;
-  scrollbar-color: #8f54a0 #ffffff;
+  /* scrollbar-width: auto;
+  scrollbar-color: #8f54a0 #ffffff; */
 }
 
 /* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
+/* *::-webkit-scrollbar {
   width: 16px;
-}
+} */
 
-*::-webkit-scrollbar-track {
+/* *::-webkit-scrollbar-track {
   background: #ffffff;
 }
 
@@ -1155,7 +1155,7 @@
   background-color: #50011c;
   border-radius: 10px;
   border: 3px solid #ffffff;
-}
+} */
 /* end of scrollbar*/
 .range-slider {
   padding: 10px 50px 10px 15px;
@@ -1471,7 +1471,7 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 20em !important;
+  min-height: 20em !important;
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;

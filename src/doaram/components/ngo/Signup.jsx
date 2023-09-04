@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink,Link} from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import BoyImage from "../../assets/da_img/login1.png";
 // import "../../assets/scss/style.scss";
 
@@ -11,6 +11,15 @@ const boyImageCom = {
 };
 
 function Registration() {
+  const passwordVisible = false;
+  const conpasswordVisible = false;
+  const input = {};
+  const errors = {};
+  const handleLogChange = (event) => {
+    event.preventDefault();
+    input[event.target.name] = event.target.value;
+    console.log(input);
+  };
   return (
     <div className="bg_dtheme fontfamilynca">
       <div className="row ">
@@ -51,93 +60,131 @@ function Registration() {
                 </NavLink>
               </div>
 
-              <div className="input-group">
-                <span className="d-input-group-text">
+              <div class="input-group">
+                <span class="d-input-group-text">
                   <i
-                    className="fa fa-user-circle themeCol-pink"
+                    class="fa fa-user-circle themeCol-pink"
                     aria-hidden="true"
                   ></i>
                 </span>
-                <div className="form-floating  border-0">
+                <div class="form-floating  border-0">
                   <select
                     name="selLoginas"
                     id="selLoginas"
                     className="form-control w-100  border-0"
                   >
                     <option value="NGO">NGO</option>
-                    {/* <option value="Corporate">CORPORATE</option>
-                    <option value="Individual">INDIVIDUAL</option> */}
                   </select>
-                  <label for="selLoginas">Login as</label>
+                  <label htmlfor="selLoginas">Login as</label>
                 </div>
-                <span className="d-input-group-text border-0"></span>
               </div>
             </div>
-
-            <div className="row"></div>
-            <div className="input-group">
-              <span className="d-input-group-text">
-                <i
-                  className="fa fa-envelope  themeCol-pink"
-                  aria-hidden="true"
-                ></i>
+            <div class="row mt-3 p-0"></div>
+            <div class="input-group mt-0">
+              <span class="d-input-group-text">
+                <i class="fa fa-envelope  themeCol-pink" aria-hidden="true"></i>
               </span>
-              <div className="form-floating  border-0">
+              <div class="form-floating  border-0">
                 <input
                   type="text"
-                  className="form-control w-100  border-0"
+                  className="form-control w-100  border-0 "
                   id="txtlogemail"
                   name="txtlogemail"
+                  value={input.txtlogemail}
+                  onChange={handleLogChange}
                   placeholder="example@gmail.com"
+                  maxlength="150"
                 />
-                <label for="txtlogemail">Email</label>
+                <label htmlfor="txtlogemail">NGO Authorised Email Id :</label>
               </div>
-              <span className="d-input-group-text border-0"></span>
             </div>
-
-            <div className="text-danger errors para"></div>
-            <div className="input-group">
-              <span className="d-input-group-text">
-                <i className="fa fa-key themeCol-pink" aria-hidden="true"></i>
+            <div class="row p-0">
+              <small class="font10 b text-end text-white">
+                * NGO Authorised Email id used for Login purpose.
+              </small>
+            </div>
+            <div className="text-danger errors para mt-0 ">
+              {/* {this.state.errors.txtlogemail} */}
+            </div>
+            <div class="input-group mt-0">
+              <span class="d-input-group-text">
+                <i class="fa fa-key themeCol-pink" aria-hidden="true"></i>
               </span>
-              <div className="form-floating  border-0">
+              <div class="form-floating  border-0">
                 <input
+                  // type={this.state.passwordVisible ? "text" : "password"}
                   className="form-control w-100  border-0"
                   id="txtlogpassword"
                   name="txtlogpassword"
+                  // value={this.state.input.txtlogpassword}
+                  // onChange={this.handleForm}
                   placeholder="*************"
                 />
-                <label for="txtlogpassword">Password</label>
+                <label htmlfor="txtlogpassword">Password</label>
               </div>
-              <span className="d-input-group-text border-0"></span>
-            </div>
-            <div className="text-danger errors para"></div>
-            <div className="input-group">
-              <span className="d-input-group-text">
-                <i className="fa fa-key  themeCol-pink" aria-hidden="true"></i>
+              <span
+                class="d-input-group-text border-0"
+                // onClick={this.togglePasswordVisibility}
+              >
+                <i
+                  // className={
+                  //   "fa " +
+                  //   (this.state.passwordVisible ? "fa-eye" : "fa-eye-slash") +
+                  //   " themeCol-orange"
+                  // }
+                  aria-hidden="true"
+                ></i>
               </span>
-              <div className="form-floating  border-0">
+            </div>
+            <div className="text-danger errors para">
+              {/* {this.state.errors.txtlogpassword} */}
+            </div>
+            <div class="input-group  mt-0">
+              <span class="d-input-group-text">
+                <i class="fa fa-key  themeCol-pink" aria-hidden="true"></i>
+              </span>
+              <div class="form-floating  border-0">
                 <input
+                  // type={this.state.conpasswordVisible ? "text" : "password"}
                   className="form-control w-100  border-0"
                   id="txtlogconpassword"
                   name="txtlogconpassword"
+                  // value={this.state.input.txtlogconpassword}
+                  // onChange={this.handleForm}
                   data-pass="txtlogpassword"
                   placeholder="*************"
                 />
-                <label for="txtlogconpassword">Confirm Password</label>
+                <label htmlfor="txtlogconpassword">Confirm Password</label>
               </div>
-              <span className="d-input-group-text border-0"></span>
+              <span
+                class="d-input-group-text border-0"
+                // onClick={this.toggleconPasswordVisibility}
+              >
+                <i
+                  // className={
+                  //   "fa " +
+                  //   (this.state.conpasswordVisible
+                  //     ? "fa-eye"
+                  //     : "fa-eye-slash") +
+                  //   " themeCol-orange"
+                  // }
+                  aria-hidden="true"
+                ></i>
+              </span>
             </div>
-            <div className="text-danger errors para"></div>
-            <div className="col-12">
+            <div className="text-danger errors para">
+              {/* {this.state.errors.txtlogconpassword} */}
+            </div>
+            <div className="col-12  mt-0">
               <div className="form-check">
                 <input
                   className="form-check-input"
                   type="checkbox"
                   name="chktermscond"
                   id="chktermscond"
+                  // onChange={this.handleChkChange}
                 />
-                <label className="form-label" for="chktermscond">
+                <label className="form-label  mt-0" htmlfor="chktermscond">
                   <NavLink
                     to="/TermsConditions"
                     className="toolTip top "
@@ -153,7 +200,9 @@ function Registration() {
                     </span>{" "}
                   </NavLink>
                 </label>
-                <div className="text-danger errors para"></div>
+                <div className="text-danger errors para">
+                  {/* {this.state.errors.chktermscond} */}
+                </div>
               </div>
               <div className="form-check">
                 <input
@@ -161,23 +210,32 @@ function Registration() {
                   type="checkbox"
                   name="chkupdate"
                   id="chkupdate"
+                  // onChange={this.handleChkChange}
                 />
-                <label className="form-label" for="chkupdate">
-                  <span className="font14">
+                <label className="form-label" htmlfor="chkupdate">
+                  <span class="font14">
                     Keep me posted on updates from DoAram
                   </span>
                 </label>
               </div>
             </div>
-            <div className="col-12">
+
+            <div className="col-12  mt-0">
               <p className="font16 text-danger b" id="signupmessage"></p>
-              <div className="d-flex  justify-content-center">
-                <Link to="/SignUpSelector">
-                  <button type="button" className="bg-yellowgra loginbtn">
+              <Link to="/SignUpSelector">
+                <div className="d-flex  justify-content-center">
+                  <button
+                    type="button"
+                    className="btnnca btn-gold col-md-5 signupbtn"
+                    style={{ height: "45px" }}
+                    // onClick={this.saveUser}
+                  >
                     Create Account
                   </button>
-                </Link>
-              </div>
+                </div>
+              </Link>
+
+              {/* <Sign prop={usercred} /> */}
             </div>
           </form>
         </div>

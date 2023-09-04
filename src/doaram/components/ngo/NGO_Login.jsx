@@ -38,8 +38,6 @@ function NGO_Login() {
     event.preventDefault();
     input[event.target.name] = event.target.value;
     console.log(input);
-    // setUserId(input.logemail);
-    // setPassword(input.logpassword);
   };
   const validateLogin = (event) => {
     event.preventDefault();
@@ -202,7 +200,7 @@ function NGO_Login() {
                 </small>
                 <br />
 
-                <div className="input-group mt-5">
+                <div className="input-group mt-3">
                   <span className="d-input-group-text">
                     <i
                       className="fa fa-user-circle themeCol-pink"
